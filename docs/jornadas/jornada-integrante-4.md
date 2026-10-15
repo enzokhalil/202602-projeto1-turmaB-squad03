@@ -1,38 +1,90 @@
-# Jornada do usuário — Integrante 4
+# Jornada do Cliente — Integrante 4
 
-## 1. Persona
+## Persona
 
-- *Nome e idade:* Rafael, 41 anos.
-- *Contexto:* Rafael é um cliente fictício da Bulbe que recebeu sua primeira fatura e precisa compreender os valores e as informações apresentados.
-- *Objetivo:* Entender a cobrança, identificar o vencimento e saber como realizar o pagamento.
-- *Medos e dúvidas:* Não compreender os valores, interpretar incorretamente a cobrança ou deixar passar o vencimento.
-- *Canais que usa:* Fatura digital, e-mail e atendimento digital.
+**Nome:** Camila  
+**Idade:** 35 anos  
+**Perfil:** Cliente que conheceu a Bulbe Energia e tem interesse em economizar na conta de luz, mas não entende completamente como o serviço funciona.
 
-Persona fictícia para fins acadêmicos.
+**Objetivo:** Compreender como funciona o serviço da Bulbe, como a economia é gerada e como será feita a cobrança.
 
-## 2. Mapa da jornada
+**Necessidades:** Receber explicações simples sobre o funcionamento do serviço, a adesão, a economia e as faturas.
 
-| Fase | Ações | Pontos de contato | Pensamentos | Emoção | Dor e evidência | Oportunidade |
-|---|---|---|---|---|---|---|
-| Contratação | Conhece o serviço e realiza a adesão. | Site e canais de contratação. | “Como será feita a cobrança?” | Expectativa. | O cliente pode ter dúvidas sobre o funcionamento da cobrança. | Explicar previamente como funciona a primeira fatura. |
-| Espera | Aguarda a primeira cobrança. | WhatsApp e e-mail. | “Quando a conta chegará?” | Dúvida. | O material informa que alguns clientes passam até 20 dias sem comunicação durante o onboarding. | Manter o cliente informado sobre as etapas. |
-| Recebimento | Abre a primeira fatura. | Fatura digital. | “O que significa cada valor?” | Curiosidade ou confusão. | A dificuldade de compreender a fatura é uma dor identificada no contexto do projeto. | Apresentar os componentes da cobrança com explicações claras. |
-| Conferência | Procura o valor total e a data de vencimento. | Fatura e canais de atendimento. | “Quanto preciso pagar e até quando?” | Preocupação. | Informações pouco evidentes podem dificultar a compreensão; essa é uma hipótese a validar. | Destacar valor total, vencimento e informações essenciais. |
-| Pagamento | Consulta as instruções e realiza o pagamento. | Fatura e meios de pagamento. | “Como faço para concluir o pagamento?” | Atenção. | A taxa de inadimplência na primeira fatura informada pela Bulbe é de 32,4%. | Simplificar as instruções de pagamento. |
+## Etapas da jornada
 
-## 3. Principais oportunidades
+### 1. Descoberta
 
-1. Explicar os componentes da primeira cobrança.
-2. Destacar o valor total e a data de vencimento.
-3. Disponibilizar orientações para dúvidas frequentes.
-4. Tornar as instruções de pagamento mais claras.
+Camila conhece a Bulbe Energia e descobre que existe a possibilidade de economizar na conta de luz. Ela se interessa pela proposta, mas não entende como isso é possível.
 
-## 4. Indicador relacionado
+**Sentimentos:** Curiosidade e dúvida.
 
-*Indicador principal do projeto:* percentual de clientes inadimplentes na primeira fatura.
+**Dores:**
+- Não compreende como funciona o serviço.
+- Tem dúvidas sobre como a economia é gerada.
+- Não sabe o que muda na sua relação com a distribuidora de energia.
 
-A taxa informada no material é de 32,4%. A jornada propõe investigar se tornar a cobrança mais compreensível ajuda a reduzir a inadimplência.
+**Oportunidade:** Explicar o funcionamento do serviço com linguagem simples e exemplos práticos.
 
-## 5. Relação com o MVP
+### 2. Consideração
 
-A jornada sugere uma tela com os dados essenciais da primeira fatura, explicações sobre a cobrança e instruções de pagamento. A viabilidade e o escopo devem ser discutidos pelo grupo antes da implementação.
+Camila procura mais informações para decidir se vale a pena contratar a Bulbe.
+
+**Sentimentos:** Interesse e insegurança.
+
+**Dores:**
+- Tem dificuldade para entender as condições do serviço.
+- Não sabe exatamente como a economia será calculada.
+- Não entende quais serão suas responsabilidades após a adesão.
+
+**Oportunidade:** Apresentar as condições da contratação, explicar como a economia funciona e esclarecer as principais dúvidas antes da adesão.
+
+### 3. Adesão
+
+Camila decide iniciar a adesão, mas ainda tem dúvidas sobre as etapas e o que acontecerá depois da contratação.
+
+**Sentimentos:** Expectativa e incerteza.
+
+**Dores:**
+- Não sabe quais são as próximas etapas.
+- Não entende quanto tempo o processo pode levar.
+- Tem dúvidas sobre quando começará a perceber os benefícios do serviço.
+
+**Oportunidade:** Apresentar as etapas da adesão e informar o que esperar após cada uma delas.
+
+### 4. Acompanhamento
+
+Após a adesão, Camila espera entender quando o serviço começará a funcionar e o que precisa acompanhar.
+
+**Sentimentos:** Expectativa e confusão.
+
+**Dores:**
+- Não sabe em que etapa está o processo.
+- Tem dúvidas sobre quando receberá a primeira fatura.
+- Não sabe onde consultar informações sobre o serviço.
+
+**Oportunidade:** Disponibilizar um acompanhamento das etapas e centralizar as informações importantes para o cliente.
+
+### 5. Primeira fatura
+
+Camila recebe a primeira fatura e tenta entender os valores e a relação entre a cobrança e o serviço contratado.
+
+**Sentimentos:** Dúvida e preocupação.
+
+**Dores:**
+- Não compreende todos os valores apresentados.
+- Tem dúvidas sobre como a economia aparece na cobrança.
+- Não sabe onde encontrar explicações sobre a fatura.
+
+**Oportunidade:** Explicar os valores, apresentar informações de forma organizada e disponibilizar respostas às dúvidas mais frequentes.
+
+## Indicador de sucesso
+
+**Percentual de inadimplência na primeira fatura.**
+
+Esse indicador permite acompanhar o problema geral de inadimplência informado pela Bulbe. Entretanto, não demonstra diretamente se o cliente compreendeu o serviço.
+
+## Relação com os dados da Bulbe
+
+A empresa informou que 32,4% dos clientes apresentam inadimplência na primeira fatura. Esse dado reforça a importância de investigar a experiência inicial do cliente, mas não comprova que a falta de entendimento sobre o serviço cause os atrasos.
+
+As dores descritas nesta jornada são hipóteses a serem investigadas, não fatos comprovados sobre todos os clientes da Bulbe.

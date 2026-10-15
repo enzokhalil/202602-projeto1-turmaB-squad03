@@ -1,4 +1,4 @@
-# Jornada do usuário — Integrante 4
+# Jornada do usuário — Integrante 3
 
 ## 1. Persona
 

@@ -32,7 +32,7 @@ O roteiro da Etapa 2 informa inadimplência de 32,4% na primeira fatura e client
 
 ## Tela e navegação
 **Arquivo proposto:** `pages/contas.html`  
-**Wireframe:** `docs/wireframes/hu02-consultar-contas.png`
+**Wireframe:** pendente — será adaptado de uma tela do Figma da disciplina e entregue em um PR separado.
 
 Início → Minhas contas → Ver detalhes → Voltar para contas.
 
@@ -49,6 +49,3 @@ Inclui consulta de lista e detalhes. Explicações sobre as contas Cemig/Bulbe p
 - [ ] Testar com contas previstas, abertas, vencidas, pagas, lista vazia e falha de carregamento.
 - [ ] Abrir Pull Request e solicitar revisão de outro integrante quando a implementação estiver pronta.
 
-## Wireframe
-
-![Lista e detalhes das contas no celular](../docs/wireframes/hu02-consultar-contas.png)

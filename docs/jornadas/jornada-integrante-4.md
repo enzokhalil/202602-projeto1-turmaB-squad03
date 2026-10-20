@@ -1,15 +1,5 @@
 # Jornada do Cliente — Integrante 4
 
-## Persona
-
-**Nome:** Camila  
-**Idade:** 35 anos  
-**Perfil:** Cliente que conheceu a Bulbe Energia e tem interesse em economizar na conta de luz, mas não entende completamente como o serviço funciona.
-
-**Objetivo:** Compreender como funciona o serviço da Bulbe, como a economia é gerada e como será feita a cobrança.
-
-**Necessidades:** Receber explicações simples sobre o funcionamento do serviço, a adesão, a economia e as faturas.
-
 ## Etapas da jornada
 
 ### 1. Descoberta

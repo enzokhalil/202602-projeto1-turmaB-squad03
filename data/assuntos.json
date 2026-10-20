@@ -1,0 +1,45 @@
+[
+  {
+    "id": "fatura",
+    "titulo": "Dúvida sobre minha fatura ou cobrança",
+    "palavrasChave": ["fatura", "cobrança", "cobranca", "boleto", "pix", "pagamento", "pagar", "valor", "vencimento", "cemig", "duas faturas"],
+    "canais": ["app", "whatsapp"],
+    "orientacao": "Comece pelo app: lá você vê o valor e o vencimento. Se a dúvida continuar, fale pelo WhatsApp com a fatura em mãos."
+  },
+  {
+    "id": "acompanhar",
+    "titulo": "Acompanhar uma solicitação que já fiz",
+    "palavrasChave": ["protocolo", "andamento", "acompanhar", "solicitação", "solicitacao", "status", "pedido"],
+    "canais": ["app", "whatsapp", "telefone"],
+    "orientacao": "Tenha o número do protocolo em mãos. Mais abaixo, em “Minhas solicitações”, você vê o que está registrado no sistema."
+  },
+  {
+    "id": "adesao",
+    "titulo": "Dúvida sobre adesão ou conexão",
+    "palavrasChave": ["adesão", "adesao", "contrato", "conexão", "conexao", "instalação", "instalacao", "qualificação", "qualificacao", "começar", "comecar"],
+    "canais": ["whatsapp", "telefone"],
+    "orientacao": "Fale com o atendimento por mensagem ou voz e informe seu nome e CPF para localizarem sua adesão."
+  },
+  {
+    "id": "dados",
+    "titulo": "Atualizar meus dados de contato",
+    "palavrasChave": ["dados", "telefone", "celular", "e-mail", "email", "endereço", "endereco", "cadastro", "atualizar"],
+    "canais": ["app", "whatsapp"],
+    "orientacao": "Confira seus dados no app. Se precisar corrigir algo, peça pelo WhatsApp e guarde o protocolo."
+  },
+  {
+    "id": "reclamacao",
+    "titulo": "Não consegui resolver meu problema",
+    "palavrasChave": ["reclamação", "reclamacao", "reclamar", "problema", "demora", "demorando", "ninguém responde", "ouvidoria", "insatisfeito"],
+    "canais": ["telefone", "ouvidoria"],
+    "orientacao": "Primeiro tente o atendimento normal e anote o protocolo. Se não resolver, leve esse protocolo à Ouvidoria."
+  },
+  {
+    "id": "cancelamento",
+    "titulo": "Quero cancelar ou saber como cancelar",
+    "palavrasChave": ["cancelar", "cancelamento", "desistir", "desistência", "desistencia", "encerrar", "sair", "rescisão", "rescisao"],
+    "canais": ["telefone", "whatsapp"],
+    "orientacao": "O cancelamento tem um caminho próprio. Veja o passo a passo logo abaixo.",
+    "mostrarCancelamento": true
+  }
+]

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulbe | Atendimento e solicitações</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/atendimento.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Atendimento e solicitações</h1>
+    <p>Encontre o canal certo e acompanhe o que você já pediu · <a href="../index.html">Voltar para o início</a></p>
+  </header>
+
+  <main>
+    <p class="aviso">Protótipo com dados fictícios. Telefones, e-mails e regras de cancelamento são exemplos e devem ser confirmados com a Bulbe.</p>
+
+    <!-- Critérios 1, 2 e 7: canais, canal adequado e cancelamento -->
+    <section aria-labelledby="titulo-assunto">
+      <h2 id="titulo-assunto">Como podemos ajudar?</h2>
+
+      <label class="campo" for="busca">Escreva o que você precisa
+        <input id="busca" type="search" placeholder="Ex.: cancelar, fatura, protocolo" autocomplete="off">
+      </label>
+
+      <p class="rotulo">Ou escolha um assunto:</p>
+      <div id="assuntos" class="chips" role="group" aria-label="Assuntos"></div>
+
+      <div id="resultado-assunto" class="resultado" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="titulo-canais">
+      <h2 id="titulo-canais">Canais de atendimento</h2>
+      <div id="canais" class="grade"></div>
+    </section>
+
+    <!-- Critérios 3 a 6 e 8: solicitações -->
+    <section aria-labelledby="titulo-solicitacoes">
+      <h2 id="titulo-solicitacoes">Minhas solicitações</h2>
+
+      <label class="campo" for="cliente">Ver como (apenas no protótipo)
+        <select id="cliente"></select>
+      </label>
+
+      <div id="solicitacoes" class="lista-solicitacoes" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>HU06 · Atendimento e acompanhamento de solicitações · Dados fictícios</p>
+  </footer>
+
+  <script type="module" src="../assets/js/atendimento.js"></script>
+</body>
+</html>

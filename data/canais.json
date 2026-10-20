@@ -1,0 +1,72 @@
+[
+  {
+    "id": "app",
+    "nome": "App da Bulbe",
+    "tipo": "Autoatendimento",
+    "descricao": "Para consultar faturas e ver as solicitações registradas, a qualquer hora.",
+    "comoUsar": [
+      "Abra o app da Bulbe e entre com seu acesso.",
+      "Vá em Faturas para ver cobranças e vencimentos.",
+      "Procure a área de atendimento para ver suas solicitações."
+    ],
+    "horario": "24 horas",
+    "contato": "Aplicativo da Bulbe",
+    "geraProtocolo": false
+  },
+  {
+    "id": "whatsapp",
+    "nome": "WhatsApp",
+    "tipo": "Atendimento por mensagem",
+    "descricao": "Para dúvidas do dia a dia. Dá para mandar foto da fatura ou documento.",
+    "comoUsar": [
+      "Salve o número da Bulbe nos seus contatos.",
+      "Escreva o assunto em uma frase e, se puder, envie foto da fatura.",
+      "Guarde o número de protocolo que receber na conversa."
+    ],
+    "horario": "Segunda a sexta, das 8h às 18h",
+    "contato": "(31) 90000-0000",
+    "geraProtocolo": true
+  },
+  {
+    "id": "telefone",
+    "nome": "Telefone",
+    "tipo": "Atendimento por voz",
+    "descricao": "Para quem prefere falar com uma pessoa ou não tem boa internet.",
+    "comoUsar": [
+      "Ligue e tenha em mãos seu nome completo e CPF.",
+      "Explique o assunto e peça o número de protocolo.",
+      "Anote o protocolo e a data da ligação."
+    ],
+    "horario": "Segunda a sexta, das 8h às 18h",
+    "contato": "0800 000 0000",
+    "geraProtocolo": true
+  },
+  {
+    "id": "email",
+    "nome": "E-mail",
+    "tipo": "Atendimento por escrito",
+    "descricao": "Para assuntos que precisam de documentos ou de um registro por escrito.",
+    "comoUsar": [
+      "Escreva no assunto do e-mail o que você precisa.",
+      "Informe nome completo e CPF no texto.",
+      "Anexe os documentos, se houver, e guarde a resposta recebida."
+    ],
+    "horario": "Recebe a qualquer hora; a resposta segue o horário de atendimento",
+    "contato": "atendimento@exemplo.com.br",
+    "geraProtocolo": true
+  },
+  {
+    "id": "ouvidoria",
+    "nome": "Ouvidoria",
+    "tipo": "Última instância interna",
+    "descricao": "Para quando você já tentou os outros canais e não teve solução.",
+    "comoUsar": [
+      "Antes, tente resolver pelos outros canais e anote o protocolo.",
+      "Procure a Ouvidoria informando esse protocolo anterior.",
+      "Conte o que aconteceu e o que você espera como solução."
+    ],
+    "horario": "Segunda a sexta, das 9h às 17h",
+    "contato": "ouvidoria@exemplo.com.br",
+    "geraProtocolo": true
+  }
+]

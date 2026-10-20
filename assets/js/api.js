@@ -24,3 +24,25 @@ export async function buscarFaturasDoCliente(clienteId) {
   const faturas = await buscarFaturas();
   return faturas.filter((fatura) => fatura.clienteId === clienteId);
 }
+
+// --- HU06: atendimento e acompanhamento de solicitações ---
+export function buscarCanais() {
+  return lerJSON('canais.json');
+}
+
+export function buscarAssuntos() {
+  return lerJSON('assuntos.json');
+}
+
+export function buscarCancelamento() {
+  return lerJSON('cancelamento.json');
+}
+
+export function buscarSolicitacoes() {
+  return lerJSON('solicitacoes.json');
+}
+
+export async function buscarSolicitacoesDoCliente(clienteId) {
+  const solicitacoes = await buscarSolicitacoes();
+  return solicitacoes.filter((s) => s.clienteId === clienteId);
+}

@@ -1,0 +1,16 @@
+{
+  "ficticio": true,
+  "confirmarComBulbe": true,
+  "canalResponsavel": "telefone",
+  "canaisAlternativos": ["whatsapp"],
+  "passos": [
+    "Tenha em mãos nome completo e CPF do titular do contrato.",
+    "Peça o cancelamento pelo canal responsável e diga que é um pedido de cancelamento.",
+    "Anote o número do protocolo: ele comprova que você fez o pedido.",
+    "Confira no app se há faturas em aberto enquanto não chegar a confirmação."
+  ],
+  "avisos": [
+    "Prazos e condições do cancelamento estão no seu contrato. Leia os termos de contratação antes de decidir.",
+    "Se o pedido não for atendido ou ficar sem resposta, procure a Ouvidoria com o protocolo."
+  ]
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "clienteId": 1,
+    "protocolo": "BLB-2026-000123",
+    "tipo": "Dúvida sobre fatura",
+    "canal": "whatsapp",
+    "abertaEm": "2026-09-28",
+    "situacao": "em_analise",
+    "atualizadoEm": "2026-09-30",
+    "prazoInformado": null,
+    "consultavelNoSistema": true,
+    "historico": [
+      { "data": "2026-09-28", "descricao": "Solicitação registrada pelo WhatsApp." },
+      { "data": "2026-09-30", "descricao": "Em análise pela equipe de atendimento." }
+    ]
+  },
+  {
+    "id": 2,
+    "clienteId": 1,
+    "protocolo": null,
+    "tipo": "Atualização de dados de contato",
+    "canal": "telefone",
+    "abertaEm": "2026-09-15",
+    "situacao": "registrada",
+    "atualizadoEm": null,
+    "prazoInformado": null,
+    "consultavelNoSistema": false,
+    "historico": []
+  },
+  {
+    "id": 3,
+    "clienteId": 2,
+    "protocolo": "BLB-2026-000087",
+    "tipo": "Cancelamento",
+    "canal": "telefone",
+    "abertaEm": "2026-09-10",
+    "situacao": "concluida",
+    "atualizadoEm": "2026-09-24",
+    "prazoInformado": "2026-09-25",
+    "consultavelNoSistema": true,
+    "historico": [
+      { "data": "2026-09-10", "descricao": "Pedido de cancelamento registrado por telefone." },
+      { "data": "2026-09-24", "descricao": "Pedido concluído." }
+    ]
+  },
+  {
+    "id": 4,
+    "clienteId": 2,
+    "protocolo": "BLB-2026-000142",
+    "tipo": "Reclamação sobre atendimento",
+    "canal": "telefone",
+    "abertaEm": "2026-10-02",
+    "situacao": "registrada",
+    "atualizadoEm": null,
+    "prazoInformado": null,
+    "consultavelNoSistema": false,
+    "historico": []
+  }
+]

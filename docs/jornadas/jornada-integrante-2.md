@@ -1,14 +1,8 @@
 # Jornada do usuário — Integrante 2
 
-## 1. Persona
+## 1. Persona relacionada
 
-- **Nome e idade:** Marina, 32 anos.
-- **Contexto:** Marina contratou a Bulbe Energia e aguarda informações sobre as próximas etapas do serviço.
-- **Objetivo:** Saber se sua contratação foi concluída corretamente e quais etapas faltam até a primeira fatura.
-- **Medos e dúvidas:** Não receber mensagens importantes, não saber se precisa realizar alguma ação e não ter confirmação do andamento do processo.
-- **Canais que usa:** WhatsApp, e-mail e canais digitais.
-
-*Persona fictícia para fins acadêmicos.*
+[Marina, 32 anos — Persona do integrante 2](../personas/persona-integrante-2.md).
 
 ## 2. Mapa da jornada
 

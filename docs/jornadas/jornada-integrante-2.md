@@ -6,6 +6,10 @@
 
 ## 2. Mapa da jornada
 
+![Mapa da jornada de Marina — integrante 2](../wireframes/jornada-integrante-2.png)
+
+[Baixar o mapa em PNG](../wireframes/jornada-integrante-2.png). A tabela abaixo mantém o conteúdo em formato textual acessível.
+
 | Fase | Ações | Pontos de contato | Pensamentos | Emoção | Dor e evidência | Oportunidade |
 |---|---|---|---|---|---|---|
 | Contratação | Preenche os dados e confirma a adesão. | Site e canais de contratação. | “Será que minha contratação foi concluída?” | Expectativa. | Pode haver incerteza sobre as próximas etapas. | Apresentar uma confirmação clara da contratação. |

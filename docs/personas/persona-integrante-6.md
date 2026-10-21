@@ -11,7 +11,7 @@
 
 ## Relação com a jornada e a história
 
-Na [jornada do integrante 6](../jornadas/jornada-integrante-6.md), a dificuldade aparece principalmente nas etapas “Espera” e “Consulta da fatura”, quando o cliente tem uma dúvida e precisa esclarecê-la a tempo, um dos medos registrados na jornada.
+Na [jornada do integrante 6](../jornadas/jornada-integrante-6.md), a dificuldade aparece principalmente nas etapas “Espera” e “Consulta da fatura”, quando o cliente tem uma dúvida e precisa esclarecê-la a tempo, um dos medos registrados nesta persona.
 
 A [HU06 — Encontrar atendimento e acompanhar solicitações](../../historias/historia-integrante-6.md) propõe a tela “Atendimento e acompanhamento de solicitações”, que apresenta os canais disponíveis, ajuda o cliente a escolher o mais adequado, exibe o protocolo e a situação das solicitações registradas e orienta sobre o cancelamento.
 

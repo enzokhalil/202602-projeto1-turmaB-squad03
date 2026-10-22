@@ -1,14 +1,10 @@
-# Jornada do Cliente — Integrante 3
+## Persona relacionada
 
-## Persona
+[Rafael, 41 anos — Persona do integrante 3](../personas/persona-integrante-3.md).
 
-**Nome:** Rafael  
-**Idade:** 41 anos  
-**Perfil:** Cliente que está considerando contratar a Bulbe Energia, mas ainda não confia totalmente na empresa.
+## Mapa da jornada
 
-**Objetivo:** Entender se a Bulbe é confiável e se vale a pena aderir ao serviço sem correr riscos ou ter surpresas financeiras.
-
-**Necessidades:** Ter acesso a informações transparentes sobre a empresa, o funcionamento do serviço, as condições do contrato e a cobrança.
+![Mapa da jornada de Rafael — integrante 3](../wireframes/jornada-integrante-3.png)
 
 ## Etapas da jornada
 

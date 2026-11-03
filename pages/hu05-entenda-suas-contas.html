@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulbe | Entenda suas contas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/hu05.css">
+</head>
+<body class="hu05">
+  <div class="tela">
+
+    <!-- topo -->
+    <header class="cabecalho">
+      <a class="botao-voltar" href="hu02-minhas-contas.html" aria-label="Voltar para Minhas contas">
+        <img src="../assets/img/hu05/voltar.svg" alt="">
+      </a>
+      <img class="logo" src="../assets/img/hu05/logo-bulbe.svg" alt="Bulbe">
+      <a class="botao-sino" href="hu02-minhas-contas.html" aria-label="Notificações">
+        <img src="../assets/img/hu05/sino.svg" alt="">
+      </a>
+      <a class="botao-perfil" href="hu03-minha-contratacao.html" aria-label="Minha contratação">
+        <img src="../assets/img/hu05/avatar-fundo.svg" alt="">
+        <img class="icone-perfil" src="../assets/img/hu05/avatar.svg" alt="">
+      </a>
+    </header>
+
+    <section class="titulo-area">
+      <p class="area">FATURAS</p>
+      <h1>Entenda suas contas</h1>
+      <p class="subtitulo">Duas cobranças no mesmo período, neste cenário.</p>
+      <img class="onda" src="../assets/img/hu05/onda.svg" alt="">
+    </section>
+
+    <main class="conteudo">
+      <p id="erro-dados" class="erro" hidden>Não foi possível carregar os dados. O projeto está aberto pelo Live Server?</p>
+
+      <!-- resumo do mês -->
+      <section class="cartao cartao-resumo">
+        <h2 id="referencia"></h2>
+        <div class="linha">
+          <span>Bulbe • vence <span id="vencimento-bulbe"></span></span>
+          <strong class="valor-bulbe"></strong>
+        </div>
+        <div class="linha">
+          <span>Cemig • vence <span id="vencimento-cemig"></span></span>
+          <strong class="valor-cemig"></strong>
+        </div>
+        <p class="total">Total: <span id="total"></span></p>
+        <p class="nota">Uma conta não quita a outra. Confira a situação de cada pagamento.</p>
+      </section>
+
+      <!-- atalhos -->
+      <a class="atalho" href="hu02-minha-fatura.html">
+        <span class="atalho-icone fundo-lilas">
+          <img src="../assets/img/hu05/fatura.svg" alt="">
+        </span>
+        <span class="atalho-texto">
+          <strong>Fatura Bulbe</strong>
+          <small>Ver valor e opções de pagamento</small>
+        </span>
+        <img class="atalho-seta" src="../assets/img/hu05/seta-azul.svg" alt="">
+      </a>
+
+      <a class="atalho" href="#cemig">
+        <span class="atalho-icone fundo-amarelo">
+          <img src="../assets/img/hu05/raio.svg" alt="">
+        </span>
+        <span class="atalho-texto">
+          <strong class="texto-laranja">Conta da distribuidora</strong>
+          <small>Por que a Cemig também cobra?</small>
+        </span>
+        <img class="atalho-seta" src="../assets/img/hu05/seta-laranja.svg" alt="">
+      </a>
+
+      <!-- explicação de cada cobrança -->
+      <section class="cartao">
+        <h2>Quem cobra o quê?</h2>
+        <p class="etiqueta fundo-lilas texto-azul">BULBE • benefício na energia</p>
+        <p class="texto"><span class="valor-bulbe"></span> • energia elegível com desconto aplicado neste exemplo.</p>
+        <p class="etiqueta fundo-amarelo">CEMIG • distribuidora</p>
+        <p class="texto"><span class="valor-cemig"></span> • componentes aplicáveis ao fornecimento, conforme o documento da distribuidora.</p>
+        <p class="nota">Cobranças separadas neste cenário. Confira instalação e período dos dois documentos antes de pagar.</p>
+      </section>
+
+      <!-- detalhe da cemig -->
+      <section class="cartao cartao-cemig" id="cemig">
+        <h2>Cemig • distribuidora</h2>
+        <p class="valor-grande valor-cemig"></p>
+        <div id="itens-cemig" class="itens"></div>
+        <p class="nota">A composição é ilustrativa. Para consultar ou pagar, use o documento e os canais oficiais da Cemig.</p>
+      </section>
+
+      <section class="cartao cartao-duvida">
+        <h2>Ainda parece duplicado?</h2>
+        <p class="texto">Compare emissor, instalação, referência e os itens dos dois documentos. O formato de cobrança depende da contratação.</p>
+        <a class="link-ajuda" href="hu06-atendimento.html">Pedir conferência ao atendimento →</a>
+      </section>
+    </main>
+
+    <!-- menu de baixo -->
+    <nav class="menu-inferior" aria-label="Menu principal">
+      <a class="ativo" href="hu02-minhas-contas.html" aria-current="page">
+        <img src="../assets/img/hu05/fatura.svg" alt="">
+        Faturas
+      </a>
+      <a href="hu01-minha-economia.html">
+        <img src="../assets/img/hu05/economia.svg" alt="">
+        Economia
+      </a>
+      <a href="hu03-minha-contratacao.html">
+        <img src="../assets/img/hu05/contrato.svg" alt="">
+        Contrato
+      </a>
+      <a href="hu06-atendimento.html">
+        <img src="../assets/img/hu05/ajuda.svg" alt="">
+        Ajuda
+      </a>
+    </nav>
+  </div>
+
+  <script type="module" src="../assets/js/hu05.js"></script>
+</body>
+</html>

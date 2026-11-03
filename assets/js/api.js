@@ -20,6 +20,10 @@ export function buscarFaturas() {
   return lerJSON('faturas.json');
 }
 
+export function buscarContasHu05() {
+  return lerJSON('contas-hu05.json');
+}
+
 export async function buscarFaturasDoCliente(clienteId) {
   const faturas = await buscarFaturas();
   return faturas.filter((fatura) => fatura.clienteId === clienteId);

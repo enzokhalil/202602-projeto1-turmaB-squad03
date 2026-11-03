@@ -1,0 +1,16 @@
+{
+  "referencia": "Outubro/2026",
+  "bulbe": {
+    "vencimento": "12/11",
+    "valor": 260.72
+  },
+  "cemig": {
+    "vencimento": "18/11",
+    "valor": 72.4,
+    "itens": [
+      { "nome": "Disponibilidade", "valor": 48.3 },
+      { "nome": "Iluminação", "valor": 16.9 },
+      { "nome": "Tributos/encargos", "valor": 7.2 }
+    ]
+  }
+}

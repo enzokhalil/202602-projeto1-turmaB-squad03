@@ -33,6 +33,6 @@ O material apresenta uma taxa de 32,4%. Esse indicador acompanha o problema gera
 
 ## 5. Relação com o MVP
 
-A [HU05 — Entender as contas da Cemig e da Bulbe](../../historias/historia-integrante-5.md) concentra-se nas etapas “Recebimento das duas faturas” e “Consulta e pagamento”. A tela [“Entenda suas contas”](../wireframes/hu05-contas-cemig-bulbe.md) apresenta o aviso de primeira cobrança, as faturas separadas com valor e vencimento, o papel de cada empresa e o atendimento adequado. A hipótese é que entender as duas cobranças ajude André a pagar ambas no prazo.
+A [HU05 — Entender as contas da Cemig e da Bulbe](../../historias/historia-integrante-5.md) concentra-se nas etapas “Recebimento das duas faturas” e “Consulta e pagamento”. A tela [“Entenda suas contas”](../wireframes/hu05-contas-cemig-bulbe.md) apresenta as faturas separadas com valor e vencimento, o que cada empresa cobra e o acesso ao atendimento. A hipótese é que entender as duas cobranças ajude André a pagar ambas no prazo.
 
 As dores descritas nesta jornada são hipóteses a validar pelo grupo, não fatos comprovados sobre todos os clientes da Bulbe.

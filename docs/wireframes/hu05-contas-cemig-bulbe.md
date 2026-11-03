@@ -7,9 +7,9 @@
 
 ![Tela Entenda suas contas](hu05-contas-cemig-bulbe.png)
 
-[Figma — tela adaptada de Márcio](https://www.figma.com/design/0fiYX7OHkJlNkgFs3V4f3l?node-id=55-307).
+[Figma — tela de Márcio](https://www.figma.com/design/2cpDUnDzNM7nVFdlHso0Ci/Bulbe---Squad-03---Wireframes?node-id=15-685).
 
-Exportação PNG da tela adaptada no Figma, em 2x (720 × 4950 px); quadro de 360 × 2475 px. A tela original de detalhe da conta permanece ao lado da adaptação no Figma.
+Exportação PNG da tela no Figma, em 390 × 1585 px. Esta versão substitui o wireframe antigo depois do feedback do professor.
 
 ## Dor e proposta
 
@@ -17,24 +17,24 @@ André recebe uma fatura da Cemig e outra da Bulbe e não entende por que existe
 
 A tela “Entenda suas contas” reúne:
 
-- aviso de primeira cobrança, explicando que o cliente passa a receber duas faturas e que não é cobrança duplicada;
-- total do mês, com valor e vencimento de cada fatura;
-- as faturas Bulbe e Cemig separadas, cada uma com o que está sendo cobrado;
-- explicação “Por que recebo duas faturas?”, com o papel de cada empresa;
-- canal de atendimento adequado para cada fatura.
+- resumo do mês, com valor e vencimento de cada fatura e o total;
+- aviso de que uma conta não quita a outra;
+- atalhos para a fatura Bulbe e para a conta da distribuidora;
+- explicação “Quem cobra o quê?”, com o que cada empresa cobra;
+- composição ilustrativa da conta da Cemig;
+- orientação “Ainda parece duplicado?”, com acesso ao atendimento.
 
-O indicador pretendido é o percentual de inadimplência na primeira fatura, acompanhado do número de dúvidas sobre cobrança. A inadimplência de 32,4% apresentada no roteiro motiva a investigação; a relação entre as duas faturas e os atrasos é uma hipótese, e a imagem não comprova melhoria do indicador. Nomes, números e valores são exemplos fictícios, como indicado na tela.
+O indicador pretendido é o percentual de inadimplência na primeira fatura, acompanhado do número de dúvidas sobre cobrança. A inadimplência de 32,4% apresentada no roteiro motiva a investigação; a relação entre as duas faturas e os atrasos é uma hipótese, e a imagem não comprova melhoria do indicador.
 
 ## Navegação prevista
 
-- Entrada: Minhas contas (HU02) → “Ver detalhes” da conta do mês, ou toque no aviso de primeira cobrança.
-- “← Minhas contas” e aba Minhas contas: retorno à HU02.
-- “Boleto” / “Copiar Pix”: pagamento da fatura Bulbe.
-- “Ver no Cemig atende”: consulta e pagamento da fatura Cemig, fora do aplicativo.
-- “Atendimento”: dúvidas sobre a fatura Bulbe → HU06. “Cemig atende”: dúvidas sobre a fatura Cemig.
-- Barra inferior: Minhas contas, Consumo e Indicações.
-- Os destinos finais serão combinados pelo squad.
+- Entrada: Minhas contas (HU02) → “Recebi duas cobranças”, ou Menu → “Por que duas contas?”.
+- Seta de voltar e aba Faturas: Minhas contas (HU02).
+- “Fatura Bulbe”: Minha fatura (HU02).
+- “Conta da distribuidora”: leva ao cartão da Cemig, na mesma tela.
+- “Pedir conferência ao atendimento” e aba Ajuda: Atendimento (HU06).
+- Abas Economia e Contrato: HU01 e HU03.
 
 ## Limites desta entrega
 
-Wireframe estático da tela de explicação das contas, sem protótipo clicável ou pagamento real. A imagem representa o mês da primeira cobrança, com as duas faturas em aberto. Os estados de fatura paga, vencida, mês com uma só fatura, carregamento e erro deverão ser detalhados/implementados na Sprint 2. A apresentação e o registro da Sprint Review I serão realizados pelo squad; esta publicação não afirma que já aconteceram.
+Wireframe da tela de explicação das contas, com protótipo navegável no Figma e sem pagamento real. A imagem representa o mês com as duas faturas em aberto. O aviso antes da primeira cobrança, previsto na história, não aparece nesta tela. Nomes, números e valores são exemplos fictícios.

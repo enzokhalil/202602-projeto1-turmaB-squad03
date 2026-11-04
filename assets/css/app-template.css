@@ -1,0 +1,97 @@
+:host {
+  --bulbe-primary: #1308a1;
+  --bulbe-muted: #626779;
+  --bulbe-background: #f7f6f0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: var(--bulbe-app-height, 100dvh);
+  min-height: 0;
+  isolation: isolate;
+  font-family: Inter, Arial, sans-serif;
+  color: #202435;
+  background: var(--bulbe-background);
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+button { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, main:focus-visible {
+  outline: 3px solid #ffb400;
+  outline-offset: 3px;
+}
+.app-page { height: 100%; display: flex; flex-direction: column; }
+.app-header {
+  position: relative;
+  flex: 0 0 auto;
+  min-height: 72px;
+  overflow: hidden;
+  padding: 12px 24px 16px;
+  color: white;
+  background: var(--bulbe-primary);
+}
+.header-sun {
+  position: absolute;
+  width: 237.38px;
+  height: 238.68px;
+  top: -1.34px;
+  left: 262.62px;
+  pointer-events: none;
+}
+.topbar { position: relative; display: flex; align-items: center; justify-content: space-between; height: 44px; }
+.menu-toggle { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; margin-left: -12px; border: 0; background: transparent; color: white; }
+.menu-toggle img { width: 19.7px; height: 15.7px; }
+.profile { display: grid; place-items: center; width: 34px; height: 34px; margin-right: -3px; background: url('../img/app-template/avatar.svg') center / 34px 34px no-repeat; font-size: 13px; }
+.brand { display: block; position: absolute; width: 100px; height: 29px; left: calc(50% - 50px); top: 8px; overflow: hidden; }
+/* A logo fornecida continua intacta. O recorte visual exclui o slogan. */
+.brand img { position: absolute; width: 100px; height: auto; top: 0; left: 0; }
+.brand__letters { filter: brightness(0) invert(1); clip-path: polygon(0 0, 86% 0, 86% 74%, 0 74%); }
+.brand__rays { clip-path: polygon(86% 0, 100% 0, 100% 87%, 86% 87%); }
+.section-label { margin: 0 0 5px; color: #d0cbff; font-size: 12px; line-height: 15px; }
+main { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+::slotted(*) { box-sizing: border-box; }
+.bottom-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); flex: 0 0 auto; min-height: 80px; background: white; padding-bottom: env(safe-area-inset-bottom, 0px); }
+.tab { position: relative; display: flex; flex-direction: column; align-items: center; gap: 5px; min-height: 80px; padding: 14px 0 10px; border: 0; color: var(--bulbe-muted); background: white; font-size: 11px; font-weight: 500; line-height: 16px; }
+.tab[aria-pressed='true'] { color: var(--area-color); background: var(--area-tint); font-weight: 600; }
+.tab[aria-pressed='true']::before { content: ''; position: absolute; height: 3px; top: 0; left: 14px; right: 14px; background: currentColor; }
+.tab[data-area='faturas'] { --area-color: #1308a1; --area-tint: #eeebff; }
+.tab[data-area='economia'] { --area-color: #146c43; --area-tint: #e4f5ea; }
+.tab[data-area='contrato'] { --area-color: #7141ad; --area-tint: #f0e8fa; }
+.tab[data-area='ajuda'] { --area-color: #086c83; --area-tint: #e2f3f7; }
+.icon { display: block; flex: 0 0 24px; width: 24px; height: 24px; }
+.tab .icon { filter: grayscale(1); opacity: .7; }
+.tab[aria-pressed='true'] .icon { filter: none; opacity: 1; }
+.tab[aria-pressed='true'][data-area='economia'] .icon { filter: brightness(0) saturate(100%) invert(33%) sepia(38%) saturate(874%) hue-rotate(104deg); }
+.tab[aria-pressed='true'][data-area='contrato'] .icon { filter: brightness(0) saturate(100%) invert(34%) sepia(24%) saturate(1782%) hue-rotate(226deg); }
+.tab[aria-pressed='true'][data-area='ajuda'] .icon { filter: brightness(0) saturate(100%) invert(28%) sepia(58%) saturate(1108%) hue-rotate(150deg); }
+.menu-layer { position: absolute; z-index: 10; inset: 0; overflow: hidden; background: rgb(5 5 26 / 40%); }
+.drawer { position: relative; width: min(320px, calc(100% - 55px)); height: 100%; overflow-y: auto; overscroll-behavior: contain; background: white; box-shadow: 6px 0 18px #00001a33; }
+.drawer-header { position: relative; height: 163px; padding: 70px 24px 0; color: white; }
+.drawer-header::before { content: ''; position: absolute; z-index: 0; inset: 0 0 auto; height: 221px; background: url('../img/app-template/drawer-background.svg') left top / 390px 220.5px no-repeat; }
+.drawer-header .header-sun { left: 239.57px; top: 12.39px; width: 142.43px; height: 143.22px; }
+.drawer-header .brand { left: calc(50% - 50px); top: 20px; }
+.drawer-header .section-label { position: relative; font-size: 11px; line-height: 13px; margin-bottom: 4px; }
+.drawer-header h2 { position: relative; margin: 0; font-size: 28px; line-height: 34px; }
+.drawer-header p:last-of-type { position: relative; margin: 7px 0 0; font-size: 13px; line-height: 16px; color: #bcf4cb; }
+.close-menu { position: absolute; top: 24px; right: 12px; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: transparent; }
+.close-menu img { width: 44px; height: 44px; }
+.drawer-nav { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 16px 20px 32px; }
+.drawer-link { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 71px; padding: 14px; border: 1px solid #dadfe8; border-radius: 16px; text-align: left; background: white; color: #1308a1; }
+.drawer-link:first-child { box-shadow: 0 4px 14px #0a08330d; }
+.drawer-link__icon { display: grid; place-items: center; flex: 0 0 36px; height: 36px; border-radius: 12px; box-shadow: 0 3px 8px #0808331a; background: #eeebff; }
+.drawer-link__text { flex: 1; min-width: 0; }
+.drawer-link strong { display: block; font-size: 14px; line-height: 20.3px; font-weight: 600; }
+.drawer-link small { display: block; margin-top: 4px; font-size: 12px; line-height: 17.4px; color: var(--bulbe-muted); }
+.drawer-link__chevron { flex: 0 0 12px; width: 12px; height: 20px; }
+.drawer-link[data-area='economia'] { color: #146c43; }
+.drawer-link[data-area='economia'] .drawer-link__icon { background: #e4f5ea; }
+.drawer-link[data-area='contrato'] { color: #7141ad; }
+.drawer-link[data-area='contrato'] .drawer-link__icon { background: #f0e8fa; }
+.drawer-link[data-area='ajuda'] { color: #086c83; }
+.drawer-link[data-area='ajuda'] .drawer-link__icon { background: #e2f3f7; }
+.drawer-link[data-area='indicacoes'] { color: #7541b1; }
+.drawer-link[data-area='indicacoes'] .drawer-link__icon { background: #eee9fc; }
+@media (prefers-reduced-motion: no-preference) {
+  .drawer { animation: drawer-in 180ms ease-out; }
+  @keyframes drawer-in { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+}

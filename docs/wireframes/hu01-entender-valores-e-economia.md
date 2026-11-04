@@ -1,25 +1,41 @@
-# HU01 — Entender os valores e a economia
+# HU01: Entender os valores e a economia
 
-**Responsável:** Enzo Khalil (@enzokhalil).
+**Responsável:** Enzo Khalil.
+
+**Persona:** [Lucas](../personas/persona-integrante-1.md).
 
 **História:** [HU01](../../historias/historia-integrante-1.md).
 
 **Jornada:** [Integrante 1](../jornadas/jornada-integrante-1.md).
 
-![Wireframe HU01 — Minha economia](hu01-entender-valores-e-economia.png)
-
-[Figma — Enzo Khalil, HU01](https://www.figma.com/design/0fiYX7OHkJlNkgFs3V4f3l?node-id=26-178).
-
 ## Dor e proposta
 
-O cliente precisa entender os valores cobrados e como a economia foi calculada para comparar o resultado com a expectativa da contratação. A tela apresenta a referência do período, os valores com e sem Bulbe, a subtração usada no cálculo e a evolução da economia.
+Lucas precisa conferir os valores cobrados e entender o cálculo da economia para comparar o benefício com a contratação.
 
-O exemplo mostra R$ 300,00 menos R$ 263,55, resultando em R$ 36,45 (12,15%). Todos os valores são fictícios e ilustram a interface; não representam um resultado validado de cliente real. Quando a estimativa contratada não está disponível, a tela informa que a comparação ainda não pode ser feita.
+As telas apresentam o resultado do período, o cálculo e a evolução da economia. O estado de conferência informa quando faltam dados para apurar o resultado.
 
-## Arquivo entregue
+**Indicador pretendido:** Pagamento da primeira fatura no prazo. A relação entre a proposta e a melhoria do indicador é uma hipótese a validar com clientes.
 
-PNG de 360 × 1340 pixels, exportado da composição da tela “DEPOIS” escolhida no Figma. A versão original fica disponível no mesmo arquivo Figma para comparação.
+## Telas da Sprint II
+
+Exportações completas dos quadros do novo arquivo Figma. Cada imagem preserva as proporções da tela e o conteúdo disponível no quadro.
+
+| Tela | Imagem | Figma | Dimensões PNG |
+| --- | --- | --- | --- |
+| Minha economia | [hu01-entender-valores-e-economia.png](hu01-entender-valores-e-economia.png) | [Abrir tela](https://www.figma.com/design/2cpDUnDzNM7nVFdlHso0Ci/Bulbe---Squad-03---Wireframes?node-id=103-299) | 390 × 1079 px |
+| Entenda sua economia | [hu01-entenda-sua-economia.png](hu01-entenda-sua-economia.png) | [Abrir tela](https://www.figma.com/design/2cpDUnDzNM7nVFdlHso0Ci/Bulbe---Squad-03---Wireframes?node-id=103-1201) | 390 × 1500 px |
+| Economia em conferência | [hu01-economia-em-conferencia.png](hu01-economia-em-conferencia.png) | [Abrir tela](https://www.figma.com/design/2cpDUnDzNM7nVFdlHso0Ci/Bulbe---Squad-03---Wireframes?node-id=103-1690) | 390 × 900 px |
+
+![Minha economia](hu01-entender-valores-e-economia.png)
+
+## Navegação
+
+O [menu lateral](geral-menu-lateral.png) reúne os acessos às áreas do aplicativo. As telas de detalhe e os estados alternativos desta HU estão relacionados na tabela acima.
 
 ## Limites
 
-Wireframe estático, sem navegação funcional ou pagamento real. Na implementação, o cálculo depende de dados completos e comparáveis do mesmo período, incluindo as cobranças aplicáveis da distribuidora. Se esses dados faltarem, a economia não deve ser apresentada como validada.
+Estas imagens são wireframes estáticos. A exportação não comprova navegação funcional, integração com sistemas, pagamento real ou atendimento real.
+
+Os nomes, valores, datas e protocolos são exemplos fictícios para demonstração. Condições contratuais e canais oficiais precisam de confirmação antes do uso real.
+
+A validação e a implementação dos estados previstos na história continuam sujeitas aos critérios de aceite da HU. As imagens não comprovam melhoria dos indicadores.

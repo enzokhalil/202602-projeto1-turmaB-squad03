@@ -1,0 +1,80 @@
+/* Conteúdo exclusivo da HU02. O cabeçalho e os menus pertencem a bulbe-app. */
+body { font-family: Inter, Arial, sans-serif; color: #202438; }
+.hu02 { --hu02-blue: #1308a1; --hu02-muted: #626779; min-height: 100%; background: #f7f6f0; }
+.hu02 *, .hu02-dialog * { box-sizing: border-box; }
+.hu02 [hidden] { display: none !important; }
+.hu02 button, .hu02 select, .hu02-dialog button { font: inherit; }
+.hu02 a, .hu02 button { -webkit-tap-highlight-color: transparent; }
+.hu02 :is(a, button, select):focus-visible, .hu02-dialog :focus-visible { outline: 3px solid #ba7900; outline-offset: 3px; }
+.hu02-hero { position: relative; isolation: isolate; min-height: 251px; padding: 15px 24px 57px; color: white; overflow: hidden; background: var(--hu02-blue); border-radius: 0 0 50% 50% / 0 0 28px 28px; }
+.hu02-hero::before { content: ''; position: absolute; z-index: -1; width: 240px; height: 240px; right: -110px; top: -70px; background: url('../img/app-template/drawer-sun.svg') center / contain no-repeat; pointer-events: none; }
+.hu02--internal .hu02-hero { min-height: 155px; padding-top: 10px; padding-bottom: 50px; }
+.hu02--internal .hu02-hero::before { width: 144px; height: 144px; right: -65px; top: -42px; }
+.hu02-eyebrow { margin: 0 0 6px; color: #d0cbff; font-size: 11px; line-height: 14px; text-transform: uppercase; letter-spacing: .025em; }
+.hu02 h1 { margin: 0; font-size: 31px; line-height: 1.18; letter-spacing: -.6px; font-weight: 700; }
+.hu02--internal h1 { font-size: 28px; }
+.hu02-subtitle { margin: 3px 0 0; font-size: 13px; line-height: 19px; font-weight: 600; }
+.hu02-greeting { margin: 20px 0 16px; font-size: 13px; line-height: 19px; color: #f1edff; }
+.hu02-installation { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; min-height: 36px; padding: 0 12px; border-radius: 20px; background: #3024b8; font-size: 12px; }
+.hu02-installation select { min-width: 0; max-width: 100%; min-height: 44px; border: 0; color: white; background: transparent; cursor: pointer; }
+.hu02-installation option { color: #202438; background: white; }
+.hu02-caption { margin: 9px 0 0; font-size: 12px; line-height: 18px; color: #f1edff; }
+.hu02-back { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: -8px 0 4px; color: white; font-size: 12px; text-decoration: none; }
+.hu02-back svg { width: 18px; height: 18px; }
+.hu02--internal .hu02-hero:has(.hu02-back) { min-height: 185px; }
+.hu02-content { position: relative; margin-top: -48px; padding: 0 24px 16px; }
+.hu02-card { padding: 20px; background: white; border-radius: 24px; box-shadow: 0 3px 0 #2024380b; }
+.hu02-card--cream { background: #fdf9ee; }
+.hu02-card h2 { margin: 0 0 16px; font-size: 16px; line-height: 23px; letter-spacing: -.2px; }
+.hu02-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; align-items: center; font-size: 12px; line-height: 18px; color: var(--hu02-muted); }
+.hu02-amount { margin: 18px 0 14px; font-size: 32px; line-height: 1.15; letter-spacing: -.8px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.hu02-small { margin: 0 0 12px; color: var(--hu02-muted); font-size: 12px; line-height: 18px; }
+.hu02-status { display: inline-block; padding: 6px 10px; border-radius: 8px; background: #fff0d5; color: #6c4b12; font-size: 11px; font-weight: 500; }
+.hu02-status--paga { background: #c9f1ce; color: #215e35; }
+.hu02-status--prevista { background: #eeebff; color: #504391; }
+.hu02-status--vencida { background: #ffe5df; color: #963a24; }
+.hu02-status--wide { display: block; margin-bottom: 12px; }
+.hu02-button { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 46px; padding: 12px 16px; border: 0; border-radius: 16px; background: var(--hu02-blue); color: white; font-size: 13px; font-weight: 600; line-height: 20px; text-decoration: none; cursor: pointer; }
+.hu02-button--soft { background: #eeebff; color: var(--hu02-blue); }
+.hu02-actions { display: flex; flex-direction: column; gap: 12px; margin: 16px 0 0; }
+.hu02-action { display: flex; align-items: center; gap: 12px; min-height: 72px; padding: 14px; border: 0; border-radius: 17px; background: white; color: var(--hu02-blue); text-decoration: none; text-align: left; cursor: pointer; width: 100%; }
+.hu02-action__icon { display: grid; place-items: center; width: 36px; height: 36px; flex: 0 0 36px; background: #eeebff; border-radius: 12px; }
+.hu02-action__icon img, .hu02-action__icon svg { width: 22px; height: 22px; }
+.hu02-action__copy { flex: 1; min-width: 0; }
+.hu02-action strong { display: block; font-size: 13px; line-height: 19px; font-weight: 600; }
+.hu02-action small { display: block; margin-top: 4px; color: var(--hu02-muted); font-size: 11px; line-height: 16px; }
+.hu02-action--green { color: #215e45; }
+.hu02-action--green .hu02-action__icon { background: #e4f5ea; }
+.hu02-chevron { width: 8px; height: 14px; flex: 0 0 8px; }
+.hu02-text-link { display: flex; align-items: center; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: var(--hu02-blue); font: inherit; font-size: 12px; font-weight: 600; text-decoration: none; text-align: left; cursor: pointer; }
+.hu02-breakdown { margin: 0; font-size: 12px; line-height: 20px; }
+.hu02-breakdown div { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; }
+.hu02-breakdown dt { color: var(--hu02-muted); }
+.hu02-breakdown dd { margin: 0; font-weight: 600; text-align: right; white-space: nowrap; }
+.hu02-breakdown .hu02-discount { color: #215e45; }
+.hu02-before { margin-top: 16px; }
+.hu02-before p { margin: 12px 0; font-size: 13px; line-height: 20px; }
+.hu02-notice { display: block; padding: 8px 10px; border-radius: 8px; background: #fff0d5; color: #6c4b12; font-size: 11px; line-height: 16px; }
+.hu02-list { margin: 0; padding: 0; list-style: none; }
+.hu02-list li + li { margin-top: 14px; }
+.hu02-invoice-link { display: block; text-decoration: none; color: inherit; padding: 2px 0; border-radius: 8px; }
+.hu02-list .hu02-meta { padding: 6px 0 12px; }
+.hu02-list .hu02-meta strong { color: #202438; font-size: 12px; font-variant-numeric: tabular-nums; }
+.hu02-feedback { font-size: 14px; line-height: 22px; }
+.hu02-feedback p { margin: 0 0 16px; }
+.hu02-demo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-top: 20px; color: var(--hu02-muted); font-size: 10px; line-height: 16px; }
+.hu02-demo a { display: inline-flex; align-items: center; min-height: 44px; color: inherit; }
+.hu02-demo span { display: flex; align-items: center; }
+.hu02-dialog { width: min(350px, calc(100% - 32px)); padding: 24px; border: 0; border-radius: 24px; color: #202438; font-family: Inter, Arial, sans-serif; box-shadow: 0 24px 80px #0003; }
+.hu02-dialog::backdrop { background: #05051a80; }
+.hu02-dialog h2 { margin: 0 0 12px; font-size: 21px; }
+.hu02-dialog p { font-size: 14px; line-height: 22px; }
+.hu02-dialog button { min-height: 44px; width: 100%; border: 0; border-radius: 14px; padding: 12px; background: #1308a1; color: white; cursor: pointer; }
+.hu02-noscript { padding: 24px; background: #fff0d5; }
+@media (max-width: 350px) {
+  .hu02-hero { padding-left: 20px; padding-right: 20px; }
+  .hu02-content { padding-left: 16px; padding-right: 16px; }
+  .hu02 h1 { font-size: 27px; }
+  .hu02--internal h1 { font-size: 25px; }
+  .hu02-card { padding: 18px; }
+}

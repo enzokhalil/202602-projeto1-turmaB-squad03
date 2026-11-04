@@ -27,7 +27,7 @@ const brand = `<span class="brand" role="img" aria-label="Bulbe">
 </span>`;
 
 class BulbeApp extends HTMLElement {
-  static observedAttributes = ['section-label', 'page-title', 'subtitle', 'greeting', 'installation', 'profile-initial', 'active-area'];
+  static observedAttributes = ['profile-initial', 'active-area'];
 
   constructor() {
     super();
@@ -36,20 +36,12 @@ class BulbeApp extends HTMLElement {
       <link rel="stylesheet" href="${stylesheet}">
       <div class="app-page">
         <header class="app-header">
-          <img class="header-sun" src="${asset('header-sun.svg')}" alt="">
           <div class="topbar">
             <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="app-menu" aria-expanded="false">
               <img src="${asset('menu.svg')}" alt="">
             </button>
             ${brand}
             <span class="profile" aria-label="Perfil de demonstração"></span>
-          </div>
-          <div class="header-copy">
-            <p class="section-label" data-copy="section-label"></p>
-            <h1 data-copy="page-title"></h1>
-            <p class="subtitle" data-copy="subtitle"></p>
-            <p class="greeting" data-copy="greeting"></p>
-            <select class="installation" aria-label="Instalação"><option></option></select>
           </div>
         </header>
         <main id="app-content" tabindex="-1"><slot></slot></main>
@@ -99,27 +91,13 @@ class BulbeApp extends HTMLElement {
       this.dispatchEvent(new CustomEvent('bulbe:navigate', { detail: { area }, bubbles: true, composed: true }));
     });
     this.menu.addEventListener('keydown', (event) => this.handleMenuKey(event));
-    this.shadowRoot.querySelector('.installation').addEventListener('change', (event) => {
-      this.setAttribute('installation', event.target.value);
-      this.dispatchEvent(new CustomEvent('bulbe:installation-change', { detail: { installation: event.target.value }, bubbles: true, composed: true }));
-    });
   }
 
   connectedCallback() { this.update(); }
   attributeChangedCallback() { if (this.page) this.update(); }
 
   update() {
-    const defaults = { 'section-label': 'VISÃO GERAL', 'page-title': 'Minhas contas', subtitle: 'Valores, vencimentos e pagamentos', greeting: 'Marina, sua próxima conta está aqui.' };
-    for (const element of this.shadowRoot.querySelectorAll('[data-copy]')) {
-      const key = element.dataset.copy;
-      element.textContent = this.getAttribute(key) ?? defaults[key];
-      element.hidden = element.textContent === '';
-    }
     this.shadowRoot.querySelector('.profile').textContent = this.getAttribute('profile-initial') || 'M';
-    const installation = this.getAttribute('installation') || '3013588579';
-    const option = this.shadowRoot.querySelector('.installation option');
-    option.value = installation;
-    option.textContent = `Instalação ${installation}`;
     const active = this.getAttribute('active-area') || 'faturas';
     const tabArea = active === 'duas-contas' ? 'faturas' : active;
     for (const button of this.shadowRoot.querySelectorAll('.tab')) {

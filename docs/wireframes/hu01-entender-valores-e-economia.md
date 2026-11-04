@@ -28,7 +28,16 @@ Exportações completas dos quadros do novo arquivo Figma. Cada imagem preserva 
 
 ![Minha economia](hu01-entender-valores-e-economia.png)
 
-## Navegação
+## Prévias HTML
+
+As duas páginas estáticas reutilizam o componente `bulbe-app` e a moldura de iPhone SE, com o conteúdo central em arquivos separados:
+
+- [Minha economia](../../pages/hu01-minha-economia.html).
+- [Entenda sua economia](../../pages/hu01-entenda-sua-economia.html).
+
+Cada arquivo abre por duplo clique ou pelo Live Server. O CSS específico fica em `assets/css/hu01-economia.css`. O conteúdo usa os dados fictícios das wireframes, sem consulta a sistemas ou cálculo dinâmico. O atalho de cálculo e o retorno conectam apenas essas duas páginas. Os demais atalhos de conteúdo são representações estáticas.
+
+## Navegação prevista nas wireframes
 
 O [menu lateral](geral-menu-lateral.png) reúne os acessos às áreas do aplicativo. As telas de detalhe e os estados alternativos desta HU estão relacionados na tabela acima.
 

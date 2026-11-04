@@ -1,6 +1,9 @@
-const asset = (name) => new URL(`../img/app-template/${name}`, import.meta.url).href;
-const stylesheet = new URL('../css/app-template.css', import.meta.url).href;
-const fontStylesheet = new URL('../css/app-fonts.css', import.meta.url).href;
+(() => {
+if (customElements.get('bulbe-app')) return;
+const scriptUrl = document.currentScript.src;
+const asset = (name) => new URL(`../img/app-template/${name}`, scriptUrl).href;
+const stylesheet = new URL('../css/app-template.css', scriptUrl).href;
+const fontStylesheet = new URL('../css/app-fonts.css', scriptUrl).href;
 if (!document.querySelector(`link[href="${fontStylesheet}"]`)) {
   const fonts = document.createElement('link');
   fonts.rel = 'stylesheet';
@@ -23,7 +26,7 @@ const brand = `<span class="brand" role="img" aria-label="Bulbe">
   <img class="brand__rays" src="${asset('logo-original.png')}" alt="">
 </span>`;
 
-export class BulbeApp extends HTMLElement {
+class BulbeApp extends HTMLElement {
   static observedAttributes = ['section-label', 'page-title', 'subtitle', 'greeting', 'installation', 'profile-initial', 'active-area'];
 
   constructor() {
@@ -53,7 +56,7 @@ export class BulbeApp extends HTMLElement {
         <nav class="bottom-nav" aria-label="Navegação principal">
           ${areas.filter((area) => area.tab).map((area) => `
             <button class="tab" type="button" data-area="${area.id}" aria-pressed="false">
-              <span class="icon" aria-hidden="true" style="--icon: url('${asset(area.tabIcon || area.icon)}')"></span>
+              <img class="icon" src="${asset(area.tabIcon || area.icon)}" alt="">
               <span>${area.tab}</span>
             </button>`).join('')}
         </nav>
@@ -162,3 +165,4 @@ export class BulbeApp extends HTMLElement {
 }
 
 if (!customElements.get('bulbe-app')) customElements.define('bulbe-app', BulbeApp);
+})();

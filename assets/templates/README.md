@@ -4,16 +4,16 @@ O componente `<bulbe-app>` reúne o cabeçalho, o menu inferior e o menu lateral
 
 ## Abrir a prévia
 
-Abra [app.html](app.html) com o Live Server. Em uma janela de computador, a moldura representa um iPhone SE de 2ª ou 3ª geração, com tela de 375 × 667 pixels CSS. Em uma janela de até 430 px, o aplicativo ocupa a tela disponível, sem a moldura.
+Abra [app.html](app.html) por duplo clique ou com o Live Server. Em uma janela de computador, a moldura representa um iPhone SE de 2ª ou 3ª geração, com tela de 375 × 667 pixels CSS. Em uma janela de até 430 px, o aplicativo ocupa a tela disponível, sem a moldura.
 
 O botão de três traços abre o menu. O botão de fechar, o clique na região escurecida e a tecla Esc fecham o menu. O foco permanece dentro do menu enquanto ele está aberto e retorna ao botão de abertura ao fechar. A lista do menu tem rolagem para alcançar os últimos itens na tela do iPhone SE.
 
 ## Reutilizar nas páginas
 
-Em um arquivo de `pages/`, carregue o módulo e coloque o conteúdo dentro do componente:
+Em um arquivo de `pages/`, carregue o script e coloque o conteúdo dentro do componente:
 
 ```html
-<script type="module" src="../assets/js/app-template.js"></script>
+<script defer src="../assets/js/app-template.js"></script>
 
 <bulbe-app
   section-label="CONTRATO"
@@ -29,7 +29,7 @@ Em um arquivo de `pages/`, carregue o módulo e coloque o conteúdo dentro do co
 </bulbe-app>
 ```
 
-O componente carrega seu CSS, a fonte Inter e as imagens por caminhos relativos ao módulo. Não depende de `style.css` ou de bibliotecas externas. Seu Shadow DOM mantém os estilos do template separados dos estilos das páginas. A fonte tem uma folha global própria, pois as declarações `@font-face` precisam ficar no documento.
+O componente carrega seu CSS, a fonte Inter e as imagens por caminhos relativos ao script. O carregamento usa um script clássico para funcionar também com arquivos locais, sem o bloqueio de módulos no protocolo `file:`. Não depende de `style.css` ou de bibliotecas externas. Seu Shadow DOM mantém os estilos do template separados dos estilos das páginas. A fonte tem uma folha global própria, pois as declarações `@font-face` precisam ficar no documento.
 
 Por padrão, a altura do componente é `100dvh`. Quando o componente está em um contêiner com altura definida, use `--bulbe-app-height: 100%`. O conteúdo central tem rolagem própria. O cabeçalho e o menu inferior ficam fora dessa rolagem.
 

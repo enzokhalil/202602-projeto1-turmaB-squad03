@@ -1,0 +1,64 @@
+@import url('app-fonts.css');
+
+.economia-page { margin: 0; font-family: Inter, Arial, sans-serif; color: #202438; line-height: 1.45; }
+.economia-page * { box-sizing: border-box; }
+.economia-hero { position: relative; overflow: hidden; min-height: 245px; padding: 12px 24px 65px; color: white; background: url('../img/hu01/header-long.svg') center bottom / 100% 317px no-repeat; }
+.economia-hero::before { content: ''; position: absolute; pointer-events: none; width: 237.38px; height: 238.68px; top: -73px; left: 262.62px; background: url('../img/hu01/sun.svg') center / contain no-repeat; }
+.economia-hero > * { position: relative; }
+.economia-hero__label { margin: 0 0 5px; color: #d0cbff; font-size: 12px; line-height: 15px; }
+.economia-hero h1 { margin: 0; font-size: 31px; line-height: 38px; letter-spacing: -.6px; }
+.economia-hero__subtitle { margin: 0; color: #bcf4cb; font-size: 15px; line-height: 18px; font-weight: 700; }
+.economia-hero__greeting { margin: 24px 0 20px; color: #bcf4cb; font-size: 13px; line-height: 16px; }
+.economia-installation { display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; width: 228px; max-width: 100%; height: 34px; padding: 0 14px; border-radius: 20px; color: white; background: #ffffff26; font-size: 12px; }
+.economia-installation img { width: 9px; height: 6px; }
+.economia-hero--detail { min-height: 149px; padding-top: 0; padding-bottom: 70px; background-image: url('../img/hu01/header-short.svg'); background-size: 100% 221px; }
+.economia-hero--detail::before { width: 142.43px; height: 143.22px; top: -59.61px; left: 309.57px; background-image: url('../img/app-template/drawer-sun.svg'); }
+.economia-hero--detail .economia-hero__label { font-size: 11px; line-height: 13px; margin-bottom: 4px; }
+.economia-hero--detail h1 { font-size: 28px; line-height: 34px; }
+.economia-hero--detail .economia-hero__subtitle { margin-top: 7px; font-size: 13px; line-height: 16px; font-weight: 400; }
+.economia-stack { position: relative; display: flex; flex-direction: column; gap: 12px; margin-top: -42px; padding: 0 24px 32px; }
+.economia-card { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 20px; border-radius: 24px; background: white; }
+.economia-card h2 { margin: 0; font-size: 18px; line-height: 26px; color: #146c43; }
+.economia-card p { margin: 0; font-size: 14px; }
+.economia-card .economia-note { font-size: 12px; color: #626779; }
+.economia-card--success { background: #bcf4cb; box-shadow: 0 4px 14px #0a08330d; }
+.economia-card .economia-amount { color: #146c45; font-size: 34px; line-height: 49px; font-weight: 700; }
+.economia-card .economia-result { font-size: 13px; font-weight: 600; }
+.economia-card--cream { background: #fff9ed; box-shadow: 0 6px 0 -2px #24263c14; }
+.economia-card--raised { box-shadow: 0 6px 0 -2px #24263c14; }
+.economia-card--warning { background: #fff1d9; }
+.economia-shortcut { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 16px; background: white; text-decoration: none; color: #146c43; }
+.economia-shortcut__icon { display: grid; place-items: center; flex: 0 0 36px; height: 36px; border-radius: 12px; background: #e4f5ea; }
+.economia-shortcut__icon img { width: 24px; height: 24px; }
+.economia-shortcut__text { flex: 1; min-width: 0; }
+.economia-shortcut strong { display: block; font-size: 14px; font-weight: 600; }
+.economia-shortcut small { display: block; margin-top: 4px; color: #626779; font-size: 12px; }
+.economia-shortcut__arrow { width: 12px; height: 20px; }
+.economia-shortcut--purple { color: #7141ad; }
+.economia-shortcut--purple .economia-shortcut__icon { background: #f0e8fa; }
+.economia-shortcut--teal { color: #086c83; }
+.economia-shortcut--teal .economia-shortcut__icon { background: #e2f3f7; }
+.economia-rows { display: flex; flex-direction: column; gap: 12px; margin: 0; }
+.economia-rows > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; font-size: 13px; }
+.economia-rows dt { color: #626779; }
+.economia-rows dd { margin: 0; text-align: right; font-weight: 600; white-space: nowrap; }
+.economia-equation { padding: 10px; border-radius: 12px; background: #bcf4cb; font-size: 12px; font-weight: 600; color: #157a4b; }
+.economia-card .economia-condition { font-size: 20px; font-weight: 700; color: #24263c; }
+.economia-text-action { font-size: 13px; font-weight: 600; color: #1308a1; }
+.economia-chart { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; align-items: end; margin: 0; }
+.economia-chart__column { display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+.economia-chart__value { color: #1308a1; font-weight: 600; }
+.economia-chart__bar { width: 100%; max-width: 52px; border-radius: 6px; background: #bcf4cb; }
+.economia-chart__bar--jul { height: 101px; }
+.economia-chart__bar--ago { height: 106.5px; }
+.economia-chart__bar--set { height: 99.375px; }
+.economia-chart__bar--out { height: 115.025px; background: #1308a1; }
+.economia-chart__month { color: #626779; }
+.economia-disclaimer { margin: 8px 0 0; color: #626779; font-size: 11px; }
+.economia-page a:focus-visible { outline: 3px solid #ffb400; outline-offset: 4px; }
+@media (max-width: 350px) {
+  .economia-hero { padding-left: 20px; padding-right: 20px; }
+  .economia-hero h1 { font-size: 27px; }
+  .economia-hero--detail h1 { font-size: 24px; }
+  .economia-stack { padding-left: 16px; padding-right: 16px; }
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulbe | Minha economia</title>
+  <link rel="stylesheet" href="../assets/css/iphone-se-preview.css">
+  <link rel="stylesheet" href="../assets/css/hu01-economia.css">
+  <script defer src="../assets/js/app-template.js"></script>
+</head>
+<body>
+  <div class="iphone-se" aria-label="Prévia em iPhone SE">
+    <div class="iphone-se__speaker" aria-hidden="true"></div>
+    <div class="iphone-se__screen">
+      <bulbe-app profile-initial="M" active-area="economia">
+        <article class="economia-page">
+          <header class="economia-hero">
+            <p class="economia-hero__label">ECONOMIA</p>
+            <h1>Minha economia</h1>
+            <p class="economia-hero__subtitle">Seu benefício, em valores claros</p>
+            <p class="economia-hero__greeting">Marina, veja quanto economizou neste mês.</p>
+            <span class="economia-installation">Instalação 3013588579 <img src="../assets/img/hu01/select-chevron.svg" alt=""></span>
+          </header>
+          <div class="economia-stack">
+            <section class="economia-card economia-card--success" aria-labelledby="resultado">
+              <h2 id="resultado">Você economizou</h2>
+              <p class="economia-amount">R$ 46,01</p>
+              <p class="economia-result">15% na energia elegível · resultado apurado</p>
+              <p class="economia-note">Sem somar cupons ou bônus de indicação.</p>
+            </section>
+            <a class="economia-shortcut" href="hu01-entenda-sua-economia.html">
+              <span class="economia-shortcut__icon"><img src="../assets/img/app-template/economia.svg" alt=""></span>
+              <span class="economia-shortcut__text"><strong>Ver cálculo e evolução</strong><small>Valores, origem dos dados e gráfico</small></span>
+              <img class="economia-shortcut__arrow" src="../assets/img/app-template/chevron-green.svg" alt="">
+            </a>
+            <div class="economia-shortcut economia-shortcut--purple">
+              <span class="economia-shortcut__icon"><img src="../assets/img/app-template/contrato.svg" alt=""></span>
+              <span class="economia-shortcut__text"><strong>Conferir minha proposta</strong><small>Compare o benefício contratado</small></span>
+              <img class="economia-shortcut__arrow" src="../assets/img/app-template/chevron-purple.svg" alt="">
+            </div>
+            <div class="economia-shortcut economia-shortcut--teal">
+              <span class="economia-shortcut__icon"><img src="../assets/img/app-template/ajuda.svg" alt=""></span>
+              <span class="economia-shortcut__text"><strong>Dúvida sobre a economia</strong><small>Acesso direto ao atendimento</small></span>
+              <img class="economia-shortcut__arrow" src="../assets/img/app-template/chevron-teal.svg" alt="">
+            </div>
+            <section class="economia-card economia-card--cream" aria-labelledby="resumo">
+              <h2 id="resumo">Resumo do período</h2>
+              <dl class="economia-rows">
+                <div><dt>Referência sem benefício</dt><dd>R$ 379,13</dd></div>
+                <div><dt>Total com o benefício</dt><dd>R$ 333,12</dd></div>
+              </dl>
+              <p class="economia-note">Mesma instalação e período. Inclui a cobrança da distribuidora neste cenário.</p>
+            </section>
+            <p class="economia-disclaimer">Dados fictícios para demonstração acadêmica.</p>
+          </div>
+        </article>
+      </bulbe-app>
+    </div>
+    <div class="iphone-se__home" aria-hidden="true"></div>
+  </div>
+</body>
+</html>

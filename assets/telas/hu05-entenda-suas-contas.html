@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulbe | Entenda suas contas</title>
+  <link rel="stylesheet" href="../css/iphone-se-preview.css">
+  <link rel="stylesheet" href="../css/hu05.css">
+  <script defer src="../js/app-template.js"></script>
+  <script defer src="../js/hu05.js"></script>
+</head>
+<body>
+  <div class="iphone-se" aria-label="Prévia em iPhone SE">
+    <div class="iphone-se__speaker" aria-hidden="true"></div>
+    <div class="iphone-se__screen">
+      <bulbe-app profile-initial="M" active-area="duas-contas">
+        <article class="contas-page">
+          <header class="contas-hero">
+            <p class="contas-hero__label">FATURAS</p>
+            <h1>Entenda suas contas</h1>
+            <p class="contas-hero__subtitle">Cada cobrança, sem confusão</p>
+            <p class="contas-hero__greeting">Marina, veja o que pagar em cada conta.</p>
+            <span class="contas-installation">Instalação 3013588579 <img src="../img/hu01/select-chevron.svg" alt=""></span>
+          </header>
+
+          <div class="contas-stack">
+            <!-- resumo do mês -->
+            <section class="contas-card contas-card--cream" aria-labelledby="resumo">
+              <h2 id="resumo">Outubro/2026</h2>
+              <dl class="contas-rows">
+                <div><dt>Bulbe • vence 12/11</dt><dd>R$ 260,72</dd></div>
+                <div><dt>Cemig • vence 18/11</dt><dd>R$ 72,40</dd></div>
+              </dl>
+              <p class="contas-total">Total: R$ 333,12</p>
+              <p class="contas-note">Uma conta não quita a outra. Confira a situação de cada pagamento.</p>
+            </section>
+
+            <!-- atalhos -->
+            <a class="contas-shortcut" href="fatura.html?cliente=1&instalacao=3013588579&id=201">
+              <span class="contas-shortcut__icon"><img src="../img/app-template/faturas.svg" alt=""></span>
+              <span class="contas-shortcut__text"><strong>Fatura Bulbe</strong><small>Ver valor e opções de pagamento</small></span>
+              <img src="../img/hu05/seta-azul.svg" alt="">
+            </a>
+            <button class="contas-shortcut contas-shortcut--cemig" type="button" id="ver-cemig">
+              <span class="contas-shortcut__icon"><img src="../img/hu05/raio.svg" alt=""></span>
+              <span class="contas-shortcut__text"><strong>Conta da distribuidora</strong><small>Por que a Cemig também cobra?</small></span>
+              <img src="../img/hu05/seta-laranja.svg" alt="">
+            </button>
+
+            <section class="contas-card contas-card--raised" aria-labelledby="quem-cobra">
+              <h2 id="quem-cobra">Quem cobra o quê?</h2>
+              <p class="contas-tag">BULBE • benefício na energia</p>
+              <p>R$ 260,72 • energia elegível com desconto aplicado neste exemplo.</p>
+              <p class="contas-tag contas-tag--cemig">CEMIG • distribuidora</p>
+              <p>R$ 72,40 • componentes aplicáveis ao fornecimento, conforme o documento da distribuidora.</p>
+              <p class="contas-note">Cobranças separadas neste cenário. Confira instalação e período dos dois documentos antes de pagar.</p>
+            </section>
+
+            <!-- o botão da Cemig rola até aqui -->
+            <section class="contas-card contas-card--raised" id="detalhe-cemig" tabindex="-1" aria-labelledby="cemig">
+              <h2 id="cemig">Cemig • distribuidora</h2>
+              <p class="contas-amount">R$ 72,40</p>
+              <dl class="contas-rows">
+                <div><dt>Disponibilidade • exemplo</dt><dd>R$ 48,30</dd></div>
+                <div><dt>Iluminação • exemplo</dt><dd>R$ 16,90</dd></div>
+                <div><dt>Tributos/encargos • exemplo</dt><dd>R$ 7,20</dd></div>
+              </dl>
+              <p class="contas-note">A composição é ilustrativa. Para consultar ou pagar, use o documento e os canais oficiais da Cemig.</p>
+            </section>
+
+            <section class="contas-card contas-card--warning" aria-labelledby="duplicado">
+              <h2 id="duplicado">Ainda parece duplicado?</h2>
+              <p>Compare emissor, instalação, referência e os itens dos dois documentos. O formato de cobrança depende da contratação.</p>
+              <a class="contas-link" href="hu06-bulbe-mapa.html#/atendimento">Pedir conferência ao atendimento →</a>
+            </section>
+
+            <p class="contas-disclaimer">Dados fictícios para demonstração acadêmica.</p>
+          </div>
+        </article>
+      </bulbe-app>
+    </div>
+    <div class="iphone-se__home" aria-hidden="true"></div>
+  </div>
+
+  <!-- aviso para as áreas que ainda não têm tela -->
+  <dialog class="contas-dialog" aria-labelledby="dialogo-titulo">
+    <h2 id="dialogo-titulo"></h2>
+    <p>Esta área será conectada à tela do integrante responsável quando ela estiver disponível.</p>
+    <form method="dialog"><button>Entendi</button></form>
+  </dialog>
+</body>
+</html>

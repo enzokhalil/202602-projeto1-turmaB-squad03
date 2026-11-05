@@ -9,6 +9,7 @@ Esta pasta reúne as implementações HTML entregues pelo grupo. O CSS continua 
 | HU02 | Rafael Lombardi | [Minhas contas](contas.html) |
 | HU02 | Rafael Lombardi | [Minha fatura](fatura.html) |
 | HU02 | Rafael Lombardi | [Histórico de contas](historico.html) |
+| HU05 | Marcio Filho | [Entenda suas contas](hu05-entenda-suas-contas.html) |
 | HU06 | Caio Campos | [Atendimento e telas da HU06](hu06-bulbe-mapa.html#/atendimento) |
 
 O arquivo da HU06 contém as telas de atendimento, solicitações e cancelamento, além dos estados alternativos e do mapa de telas.

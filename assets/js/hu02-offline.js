@@ -47,8 +47,8 @@ let ultimoFoco;
 
 const escapar = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const iconeRelogio = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg>';
-const imagem = (nome) => `<img src="../assets/img/app-template/${nome}.svg" alt="">`;
-const chevron = '<img class="hu02-chevron" src="../assets/img/app-template/chevron.svg" alt="">';
+const imagem = (nome) => `<img src="../img/app-template/${nome}.svg" alt="">`;
+const chevron = '<img class="hu02-chevron" src="../img/app-template/chevron.svg" alt="">';
 const badge = (f, wide = false, prefixo = '') => `<span class="hu02-status hu02-status--${situacao(f)}${wide ? ' hu02-status--wide' : ''}">${escapar(prefixo)}${rotulos[situacao(f)]}</span>`;
 
 function url(pagina, id) {

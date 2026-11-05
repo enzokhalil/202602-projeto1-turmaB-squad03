@@ -118,8 +118,11 @@ Situação conferida em 05/11/2026. Uma prévia HTML não representa, por si só
 | Wireframes | Conjunto atualizado em `docs/wireframes/` |
 | Sprint Review I | [Registro da Sprint I](docs/sprints/sprint-review-1.md) |
 | Template | Integrado à `main` pelo [PR #32](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/32) |
-| HU01 | Duas prévias HTML recuperadas do [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) e incluídas na reorganização em `assets/telas/`; integração desta branch à `main` pendente |
+| HU01 | Duas prévias HTML recuperadas do [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) e integradas à `main` em `assets/telas/` |
 | HU02 | Páginas integradas à `main` pelo [PR #34](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/34) |
+| HU03 | Minha contratação e Meu documento, entregues no PR #37 |
+| HU04 | Wireframe disponível. Entrega HTML pendente |
+| HU05 | Entenda suas contas, integrada à `main` pelo PR #38 |
 | HU06 | Telas integradas à `main` pelo [PR #35](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/35) |
 | Demais implementações e integração | Em desenvolvimento na Sprint II |
 | Sprint Review II | Prevista para 06/11/2026, conforme o roteiro da Turma B |

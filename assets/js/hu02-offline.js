@@ -80,9 +80,9 @@ function renderContas(lista) {
     <h2>${titulo}</h2><div class="hu02-meta"><span>${status === 'paga' || status === 'vencida' ? 'Venceu' : 'Vence'} em ${dataCompleta(f.vencimento)}</span>${badge(f)}</div>
     <p class="hu02-amount">${moeda(f.valor)}</p><p class="hu02-small">Bulbe · referência ${referencia(f.referencia).toLowerCase()}</p>
     ${status === 'prevista' ? '<p class="hu02-notice">Valor estimado. Esta conta ainda não foi emitida e não está disponível para pagamento.</p>' : ''}
-    <a class="hu02-button" href="${url('fatura', f.id)}">${status === 'prevista' ? 'Ver previsão' : 'Abrir fatura'}</a>
+    <a class="hu02-button" href="${url('hu02-fatura', f.id)}">${status === 'prevista' ? 'Ver previsão' : 'Abrir fatura'}</a>
     </article><div class="hu02-actions">
-    ${acao({ titulo: 'Histórico de contas', texto: 'Referência, valor e situação', icon: iconeRelogio, href: url('historico') })}
+    ${acao({ titulo: 'Histórico de contas', texto: 'Referência, valor e situação', icon: iconeRelogio, href: url('hu02-historico') })}
     ${acao({ titulo: 'Entenda suas contas', texto: 'Por que recebo contas da Bulbe e da Cemig?', icon: imagem('duas-contas'), area: 'duas-contas' })}
     ${acao({ titulo: 'Minha economia', texto: 'Confira o benefício deste mês', icon: imagem('economia'), area: 'economia', green: true })}
     </div>${ajuda()}`;
@@ -111,7 +111,7 @@ function renderHistorico(lista) {
   const emitidas = ordenarContas(lista.filter((f) => situacao(f) !== 'prevista'));
   const previstas = ordenarContas(lista.filter((f) => situacao(f) === 'prevista'));
   const atual = proximaConta(emitidas);
-  const itens = (f) => `<li><a class="hu02-invoice-link" href="${url('fatura', f.id)}" aria-label="Ver detalhes de ${referencia(f.referencia)}, ${rotulos[situacao(f)]}, ${moeda(f.valor)}">
+  const itens = (f) => `<li><a class="hu02-invoice-link" href="${url('hu02-fatura', f.id)}" aria-label="Ver detalhes de ${referencia(f.referencia)}, ${rotulos[situacao(f)]}, ${moeda(f.valor)}">
       ${badge(f, true, `${referencia(f.referencia, true)} · `)}<div class="hu02-meta"><span>${['paga', 'vencida'].includes(situacao(f)) ? 'Venceu' : 'Vence'} em ${dataCurta(f.vencimento)}</span><strong>${moeda(f.valor)}</strong></div>
       ${f.id === atual?.id && ['aberta', 'vencida'].includes(situacao(f)) ? '<span class="hu02-button hu02-button--soft">Abrir fatura atual</span>' : ''}
       </a></li>`;
@@ -122,7 +122,7 @@ function renderHistorico(lista) {
 
 function render() {
   const lista = contas.filter((f) => !instalacao || f.instalacao === instalacao);
-  for (const link of document.querySelectorAll('[data-voltar]')) link.href = url('contas');
+  for (const link of document.querySelectorAll('[data-voltar]')) link.href = url('hu02-contas');
   if (!lista.length) { mensagem('Você ainda não tem contas disponíveis', 'Assim que uma conta estiver disponível, você poderá consultar o valor, o vencimento e a situação aqui.'); return; }
   ({ contas: renderContas, fatura: renderFatura, historico: renderHistorico })[tela](lista);
 }
@@ -163,7 +163,7 @@ function dialogo(titulo, texto) {
 
 // As páginas das outras HUs ainda não existem na main. Centralize os destinos
 // aqui quando forem entregues, sem modificar o template compartilhado.
-const destinos = { faturas: () => url('contas'), contrato: () => url('contratacao'), 'duas-contas': () => url('hu05-entenda-suas-contas') };
+const destinos = { faturas: () => url('hu02-contas'), contrato: () => url('hu03-contratacao'), 'duas-contas': () => url('hu05-entenda-suas-contas') };
 const nomes = { economia: 'Minha economia', contrato: 'Minha contratação', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
 function navegar(area) {
   if (destinos[area]) { location.href = destinos[area](); return; }
@@ -182,7 +182,7 @@ document.addEventListener('click', (event) => {
 document.querySelector('#instalacao')?.addEventListener('change', (event) => {
   instalacao = event.target.value;
   // Alguns navegadores restringem mudanças de URL no protocolo file:.
-  if (location.protocol !== 'file:') history.replaceState(null, '', url('contas'));
+  if (location.protocol !== 'file:') history.replaceState(null, '', url('hu02-contas'));
   render();
 });
 document.querySelector('dialog').addEventListener('close', () => ultimoFoco?.focus());

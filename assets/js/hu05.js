@@ -5,9 +5,9 @@ const conta = 'cliente=1&instalacao=3013588579';
 
 // telas do grupo que já existem
 const destinos = {
-  faturas: `contas.html?${conta}`,
+  faturas: `hu02-contas.html?${conta}`,
   economia: 'hu01-minha-economia.html',
-  contrato: '../../pages/contratacao.html',
+  contrato: './hu03-contratacao.html',
   ajuda: 'hu06-bulbe-mapa.html#/atendimento',
 };
 

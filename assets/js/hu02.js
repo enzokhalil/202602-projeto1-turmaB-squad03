@@ -129,7 +129,7 @@ function dialogo(titulo, texto) {
 
 // As páginas das outras HUs ainda não existem na main. Centralize os destinos
 // aqui quando forem entregues, sem modificar o template compartilhado.
-const destinos = { faturas: () => url('contas') };
+const destinos = { faturas: () => url('contas'), contrato: () => url('contratacao') };
 const nomes = { economia: 'Minha economia', contrato: 'Minha contratação', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
 function navegar(area) {
   if (destinos[area]) { location.href = destinos[area](); return; }

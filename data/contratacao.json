@@ -1,0 +1,24 @@
+{
+  "clienteId": 1,
+  "nome": "Marina Souza",
+  "instalacoes": [
+    {
+      "instalacao": "3013588579",
+      "adesao": "2026-000123",
+      "dataAdesao": "2026-09-20",
+      "descontoPercentual": 15,
+      "beneficioAtivo": true,
+      "inicioServico": "2026-10-01",
+      "permanenciaMinima": null,
+      "prazoCancelamento": null,
+      "multa": null,
+      "primeiraReferencia": "2026-10",
+      "primeiraFaturaVencimento": "2026-11-12",
+      "eventos": [
+        { "data": "2026-09-20", "descricao": "Adesão registrada" },
+        { "data": "2026-09-22", "descricao": "Análise iniciada" },
+        { "data": "2026-10-01", "descricao": "Instalação conectada" }
+      ]
+    }
+  ]
+}

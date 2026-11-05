@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meu documento — protótipo da HU03 com dados fictícios da Bulbe.">
+  <title>Bulbe | Meu documento</title>
+  <link rel="stylesheet" href="../assets/css/iphone-se-preview.css">
+  <link rel="stylesheet" href="../assets/css/hu03.css">
+  <script defer src="../assets/js/app-template.js"></script>
+  <script defer src="../assets/js/hu03.js"></script>
+</head>
+<body data-hu03-tela="documento">
+  <div class="iphone-se" aria-label="Prévia do aplicativo em iPhone SE">
+    <div class="iphone-se__speaker" aria-hidden="true"></div>
+    <div class="iphone-se__screen">
+      <bulbe-app profile-initial="M" active-area="contrato">
+        <section class="hu03 hu03--internal" aria-label="Meu documento">
+          <header class="hu03-hero">
+            <a class="hu03-back" href="contratacao.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m12 5-7 7 7 7M5 12h15"/></svg>Minha contratação</a>
+            <p class="hu03-eyebrow">Contrato</p>
+            <h1>Meu documento</h1>
+            <p class="hu03-caption" id="hu03-doc-sub">Exemplo ilustrativo.</p>
+          </header>
+          <div class="hu03-content" id="hu03-conteudo" aria-live="polite" aria-busy="true">
+            <div class="hu03-card hu03-feedback" role="status">Carregando o documento…</div>
+          </div>
+        </section>
+      </bulbe-app>
+      <noscript><p class="hu03-noscript">Ative o JavaScript para consultar o documento desta demonstração.</p></noscript>
+    </div>
+    <div class="iphone-se__home" aria-hidden="true"></div>
+  </div>
+  <dialog class="hu03-dialog" aria-labelledby="hu03-dialogo-titulo">
+    <h2 id="hu03-dialogo-titulo"></h2><p id="hu03-dialogo-texto"></p>
+    <form method="dialog"><button>Entendi</button></form>
+  </dialog>
+</body>
+</html>

@@ -49,12 +49,7 @@
 .contas-shortcut small { display: block; margin-top: 4px; color: #626779; font-size: 12px; }
 
 .contas-link { display: flex; align-items: center; min-height: 44px; color: #1308a1; font-size: 13px; font-weight: 600; text-decoration: none; }
-.contas-page :is(a, button):focus-visible, .contas-dialog button:focus-visible { outline: 3px solid #ba7900; outline-offset: 3px; }
+.contas-page :is(a, button):focus-visible { outline: 3px solid #ba7900; outline-offset: 3px; }
 .contas-disclaimer { margin: 0; color: #626779; font-size: 10px; text-align: center; }
 
 /* aviso */
-.contas-dialog { width: min(350px, calc(100% - 32px)); padding: 24px; border: 0; border-radius: 24px; color: #202438; font-family: Inter, Arial, sans-serif; }
-.contas-dialog::backdrop { background: #05051a80; }
-.contas-dialog h2 { margin: 0 0 12px; font-size: 21px; }
-.contas-dialog p { font-size: 14px; line-height: 22px; }
-.contas-dialog button { width: 100%; min-height: 44px; padding: 12px; border: 0; border-radius: 14px; background: #1308a1; color: white; font: inherit; cursor: pointer; }

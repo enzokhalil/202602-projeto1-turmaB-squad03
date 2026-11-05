@@ -61,7 +61,7 @@ O [guia do template](assets/templates/README.md) explica como inserir o conteúd
 
 2. Abra a pasta no VS Code.
 3. Instale a extensão Live Server, sugerida pelo projeto.
-4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
+4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**. A demonstração abre em **Minha economia**. Use o menu para acessar as seis histórias e as abas inferiores para alternar entre Faturas, Economia, Contrato e Ajuda.
 5. Acesse as páginas da solução em [assets/telas/](assets/telas/README.md), conforme as entregas integradas à sua branch.
 
 O Live Server é o modo de execução do projeto com JSON via `fetch`. O template e algumas prévias estáticas também abrem por duplo clique.
@@ -121,7 +121,7 @@ Situação conferida em 05/11/2026. Uma prévia HTML não representa, por si só
 | HU01 | Duas prévias HTML recuperadas do [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) e integradas à `main` em `assets/telas/` |
 | HU02 | Páginas integradas à `main` pelo [PR #34](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/34) |
 | HU03 | Minha contratação e Meu documento, entregues no PR #37 |
-| HU04 | Wireframe disponível. Entrega HTML pendente |
+| HU04 | Tela e etapas disponíveis na demonstração |
 | HU05 | Entenda suas contas, integrada à `main` pelo PR #38 |
 | HU06 | Telas integradas à `main` pelo [PR #35](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/35) |
 | Demais implementações e integração | Em desenvolvimento na Sprint II |

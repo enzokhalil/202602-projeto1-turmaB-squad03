@@ -120,8 +120,8 @@
       </section>
 
       <div class="hu03-links">
-        <button class="hu03-link" type="button" data-dialog="cancelamento">Como solicitar cancelamento →</button>
-        <button class="hu03-link" type="button" data-dialog="servico">Entender como a Bulbe funciona →</button>
+        <a class="hu03-link" href="hu06-bulbe-mapa.html#/cancelar">Como solicitar cancelamento →</a>
+        <a class="hu03-link" href="hu04.html#/servico">Entender como a Bulbe funciona →</a>
       </div>
 
       <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../../index.html">Início do projeto ↗</a></footer>`;
@@ -142,7 +142,7 @@
         <p class="hu03-text">Esta visualização representa o acesso ao documento. Para conferir cláusulas, solicite a cópia oficial assinada. Não acrescentamos condições contratuais ausentes.</p>
       </article>
 
-      <button class="hu03-button" type="button" data-dialog="copia">Pedir a cópia ao atendimento</button>
+      <a class="hu03-button" href="hu06-bulbe-mapa.html#/atendimento?ir=canais">Pedir a cópia ao atendimento</a>
       <a class="hu03-link" href="${escapar(withQuery('hu03-contratacao.html'))}">Voltar à minha contratação →</a>
 
       <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../../index.html">Início do projeto ↗</a></footer>`;
@@ -186,9 +186,6 @@
   // Textos dos diálogos. Apenas orientação; nada é efetivado nesta demonstração.
   const dialogos = {
     reconheço: ['Não reconhece esta adesão?', 'Se você não reconhece esta contratação, procure o atendimento da Bulbe para esclarecer o vínculo. Esta é uma demonstração acadêmica: não há canal real conectado nem abertura de solicitação.'],
-    cancelamento: ['Como solicitar cancelamento', 'O cancelamento é tratado pelo atendimento da Bulbe, que confirma as condições registradas. Nesta demonstração não há canal real conectado e nenhum cancelamento é efetivado.'],
-    servico: ['Como a Bulbe funciona', 'Esta explicação pertence à tela do integrante responsável e será conectada quando estiver disponível. Nesta entrega você pode consultar Minha contratação e Meu documento.'],
-    copia: ['Pedir a cópia ao atendimento', 'No aplicativo real, a cópia oficial assinada seria solicitada ao atendimento da Bulbe. Esta é uma demonstração: não há documento oficial nem canal de atendimento conectado.'],
   };
 
   function dialogo(chave) {
@@ -199,26 +196,6 @@
     document.querySelector('#hu03-dialogo-texto').textContent = texto;
     dialog.showModal();
   }
-
-  // Áreas já entregues na main recebem link real; as demais abrem um aviso.
-  const destinos = { faturas: () => withQuery('hu02-contas.html') };
-  const nomes = { economia: 'Minha economia', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
-
-  function navegar(area) {
-    if (destinos[area]) { location.href = destinos[area](); return; }
-    if (area === 'contrato') { // já estamos na HU03; volta para a tela principal se preciso.
-      if (tela === 'documento') location.href = withQuery('hu03-contratacao.html');
-      else app.setAttribute('active-area', 'contrato');
-      return;
-    }
-    app.setAttribute('active-area', 'contrato');
-    ultimoFoco = document.activeElement;
-    document.querySelector('#hu03-dialogo-titulo').textContent = nomes[area] || 'Outra área';
-    document.querySelector('#hu03-dialogo-texto').textContent = 'Esta área será conectada à tela do integrante responsável quando ela estiver disponível. Nesta entrega, você pode navegar por Minha contratação, Meu documento e, pela aba Faturas, por Minhas contas.';
-    document.querySelector('.hu03-dialog').showModal();
-  }
-
-  if (app) app.addEventListener('bulbe:navigate', (event) => navegar(event.detail.area));
 
   document.addEventListener('click', (event) => {
     const alvo = event.target.closest('[data-dialog], [data-scroll]');

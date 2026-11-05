@@ -1,94 +1,127 @@
-# [Nome da solução]
+# Bulbe Energia: da adesão à primeira fatura
 
-> Projeto em Ciência de Dados I · Ibmec BH · 2º semestre de 2026
-> Cliente: **Bulbe Energia** · Turma **[A/B]** · Squad **[XX]**
+Projeto em Ciência de Dados I, Ibmec BH, 2º semestre de 2026. **Turma B, Squad 03.**
 
-[Uma frase que resume a solução: o que ela faz e para quem. Exemplo: "Painel que acompanha o cliente novo da Bulbe da adesão ao pagamento da primeira fatura."]
+**Empresa parceira:** Bulbe Energia.
 
----
+**Professor:** Cristiano de Macedo Neto.
+
+Frontend acadêmico que ajuda o cliente novo a entender o serviço contratado, conferir a economia e distinguir as cobranças da Bulbe e da Cemig.
 
 ## 1. Problema
 
-[Qual parte da dor da Bulbe o squad escolheu atacar e por quê. Use pelo menos um dado da apresentação da Bulbe como evidência.]
+O grupo escolheu investigar a falta de clareza nas primeiras cobranças. O cliente pode ter dúvidas sobre o que contratou, como a economia aparece e por que recebe uma fatura da Cemig e outra da Bulbe.
 
-- **Dor escolhida:** [ex.: clientes que não recebem ou não entendem a 1ª fatura]
-- **Evidência:** [ex.: cerca de 20% de falha na entrega de mensagens de WhatsApp]
-- **Indicador que a solução pretende mover:** [pagamento da 1ª fatura | churn do 1º mês | entregabilidade das comunicações]
+O roteiro da Etapa 2 apresenta **32,4% de inadimplência na primeira fatura**, entre setembro de 2025 e julho de 2026. Também informa cerca de 20% de falha na entrega de mensagens por WhatsApp e situações de até 20 dias sem comunicação durante o onboarding.
+
+**Fonte:** material da Bulbe Energia reproduzido no [roteiro da Etapa 2 da disciplina](https://docs.google.com/document/d/14SpYXCmTpKkOcLHv6X9748ZEXL4ni0p1azWpK9Lz4sI/edit).
+
+**Indicador principal:** percentual de inadimplência na primeira fatura. A hipótese é que explicar o serviço e as cobranças ajude o cliente a pagar com segurança. O dado contextualiza o problema, mas não demonstra sozinho a causa dos atrasos.
 
 ## 2. Persona e jornada
 
-- **Persona:** [nome fictício, idade, contexto em uma linha]
-- **Mapa de jornada:** [docs/jornada.md](docs/jornada.md)
+A [persona principal consolidada](docs/personas/persona-principal.md) é Rafael, 41 anos, cliente novo que precisa entender o serviço e as duas faturas para confiar e pagar no prazo. Ela combina a necessidade de transparência de Rafael com a dúvida de André sobre uma possível cobrança em duplicidade.
 
-## 3. Solução
+As jornadas que sustentam esse recorte são a [jornada de Rafael](docs/jornadas/jornada-integrante-3.md) e a [jornada de André](docs/jornadas/jornada-integrante-5.md). Os demais perfis e percursos ficam em [personas](docs/personas/) e [jornadas](docs/jornadas/).
 
-[Descrição curta da solução e das principais telas.]
+Os momentos críticos são a adesão, a espera pela primeira fatura e a conferência das primeiras cobranças. As personas são fictícias e orientam o desenho acadêmico da solução.
 
-| Tela | O que faz | História relacionada |
-| --- | --- | --- |
-| [Início] | [ ] | [HU01] |
-| [ ] | [ ] | [ ] |
+## 3. Solução e histórias
 
-- **Histórias de usuário:** [docs/historias.md](docs/historias.md)
-- **Wireframes:** [docs/wireframes/](docs/wireframes/)
+A solução organiza informações de contratação, economia, contas e atendimento em uma experiência para celular. HU03 e HU05 representam o recorte central da persona principal. As outras histórias apoiam a consulta e a compreensão da cobrança.
 
-## 4. Tecnologias
+| História | Telas propostas | Necessidade | Responsável |
+| --- | --- | --- | --- |
+| [HU01](historias/historia-integrante-1.md) | Minha economia e Entenda sua economia | Conferir valores e entender o benefício | Enzo Khalil |
+| [HU02](historias/historia-integrante-2.md) | Minhas contas, Minha fatura e Histórico de contas | Encontrar valor, vencimento e situação das contas | Rafael Lombardi |
+| [HU03](historias/historia-integrante-3.md) | Minha contratação e Meu documento | Confirmar o serviço e consultar as condições | Rhuan Matavellhe |
+| [HU04](historias/historia-integrante-4.md) | Como a Bulbe funciona | Entender o serviço e as etapas da jornada | Igor Mata Machado |
+| [HU05](historias/historia-integrante-5.md) | Entenda suas contas | Distinguir as cobranças Bulbe e Cemig | Marcio Filho |
+| [HU06](historias/historia-integrante-6.md) | Atendimento, Minha solicitação e Cancelar assinatura | Encontrar ajuda e acompanhar solicitações | Caio Campos |
 
-- HTML, CSS e JavaScript puro (vanilla)
-- Dados fictícios em JSON, lidos com `fetch` (pasta [`data/`](data/))
-- Git e GitHub (Issues, Projects e Pull Requests)
+As imagens, os estados alternativos e os links dos quadros de origem estão no [índice de wireframes](docs/wireframes/README.md). O conjunto revisado contém 19 telas exportadas do [Figma do Squad 03](https://www.figma.com/design/2cpDUnDzNM7nVFdlHso0Ci/Bulbe---Squad-03---Wireframes?node-id=14-364).
+
+## 4. Tecnologias e template
+
+- HTML, CSS e JavaScript puro, sem framework de interface.
+- Dados fictícios em JSON na pasta [data/](data/), com funções de leitura em [api.js](assets/js/api.js).
+- Git e GitHub para branches, Issues, Pull Requests e revisão.
+- Componente compartilhado `bulbe-app` para a barra superior, o menu inferior e o menu lateral.
+- Prévia de iPhone SE de 375 × 667 pixels CSS, com conteúdo central rolável.
+
+O [guia do template](assets/templates/README.md) explica como inserir o conteúdo de uma HU sem repetir o código dos menus. Título, saudação, instalação e informações específicas pertencem a cada página.
 
 ## 5. Como executar
 
 1. Clone o repositório:
+
    ```bash
-   git clone https://github.com/[usuario]/202602-projeto1-[turma]-[squad].git
+   git clone https://github.com/enzokhalil/202602-projeto1-turmaB-squad03.git
    ```
+
 2. Abra a pasta no VS Code.
-3. Instale a extensão **Live Server** (o VS Code vai sugerir automaticamente).
+3. Instale a extensão Live Server, sugerida pelo projeto.
 4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
+5. Acesse as páginas da solução em `pages/`, conforme as entregas integradas à sua branch.
 
-> Abrir o `index.html` direto no navegador (duplo clique) não funciona: o `fetch` dos arquivos JSON exige um servidor.
+O Live Server é o modo de execução do projeto com JSON via `fetch`. O template e algumas prévias estáticas também abrem por duplo clique.
 
-## 6. Estrutura do repositório
+## 6. Estrutura
 
-```
-├── index.html            # Página inicial
-├── pages/                # Demais telas da solução
+```text
+├── index.html          # Entrada do projeto
+├── pages/              # Páginas HTML das histórias
 ├── assets/
-│   ├── css/style.css     # Estilos
-│   ├── js/main.js        # Lógica da página inicial
-│   ├── js/api.js         # Leitura dos dados (fetch)
-│   └── img/              # Imagens e ícones
-├── data/                 # Dados fictícios em JSON
-├── docs/                 # Jornada, histórias, wireframes e sprints
-└── .github/              # Modelos de Issue e de Pull Request
+│   ├── css/            # Estilos compartilhados e de cada HU
+│   ├── js/             # Template, acesso a dados e lógica das páginas
+│   ├── img/            # Logo e recursos visuais
+│   ├── fonts/          # Fonte Inter e licença
+│   └── templates/      # Prévia e guia do componente compartilhado
+├── data/               # Dados fictícios em JSON
+├── historias/          # Histórias e critérios de aceite
+├── docs/
+│   ├── personas/       # Personas individuais e consolidada
+│   ├── jornadas/       # Jornadas dos integrantes
+│   ├── wireframes/     # Imagens e documentação das telas
+│   └── sprints/        # Registros das reviews
+└── .github/            # Modelos de Issues e Pull Request
 ```
 
-## 7. Quadro do projeto
+## 7. Organização do trabalho
 
-- **GitHub Projects:** [link para o quadro do squad]
+- [Quadros vinculados ao repositório](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/projects).
+- [Issues do grupo](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/issues).
+- [Pull Requests](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pulls).
+
+Cada integrante responde por uma história e suas telas. A implementação ocorre em branches e entra na `main` por Pull Request. O grupo usa os registros das reviews para acompanhar entregas, pendências e próximos passos.
 
 ## 8. Equipe
 
-| Integrante | GitHub | Papel principal |
+| Integrante | GitHub | Responsabilidade |
 | --- | --- | --- |
-| [Nome] | [@usuario](https://github.com/usuario) | [ex.: Scrum Master, front-end, dados, documentação] |
-| [Nome] | [@usuario](https://github.com/usuario) | [ ] |
-| [Nome] | [@usuario](https://github.com/usuario) | [ ] |
+| Enzo Khalil | [@enzokhalil](https://github.com/enzokhalil) | HU01, economia e template compartilhado |
+| Rafael Lombardi | [@RLrafael01](https://github.com/RLrafael01) | HU02, contas, fatura e histórico |
+| Rhuan Matavellhe | [@MdRhuan](https://github.com/MdRhuan) | HU03, contratação e documento |
+| Igor Mata Machado | [@igllmm](https://github.com/igllmm) | HU04, funcionamento do serviço e jornada |
+| Marcio Filho | [@marcio-lcf](https://github.com/marcio-lcf) | HU05, contas Bulbe e Cemig |
+| Caio Campos | [@Caiocampos21](https://github.com/Caiocampos21) | HU06, atendimento e solicitações |
 
 ## 9. Entregas
 
-| Marco | Aula | Status |
-| --- | --- | --- |
-| Mapa de jornada | 19 | [ ] |
-| Histórias de usuário | 20 | [ ] |
-| Wireframes | 21–23 | [ ] |
-| Sprint Review I | 24 | [ ] |
-| Implementação | 25–28 | [ ] |
-| Sprint Review II | 29 | [ ] |
-| Versão final | 30 | [ ] |
+Situação conferida em 04/11/2026. Uma prévia HTML não representa, por si só, a conclusão de todos os critérios da história.
 
----
+| Marco | Situação |
+| --- | --- |
+| Personas e jornadas | Documentadas por integrante e na síntese principal |
+| Histórias | Seis histórias disponíveis em `historias/` |
+| Wireframes | Conjunto atualizado em `docs/wireframes/` |
+| Sprint Review I | [Registro da Sprint I](docs/sprints/sprint-review-1.md) |
+| Template | Integrado à `main` pelo [PR #32](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/32) |
+| HU01 | Duas prévias HTML criadas. O [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) entrou na branch do template; integração à `main` pendente nesta conferência |
+| HU02 | Páginas integradas à `main` pelo [PR #34](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/34) |
+| HU06 | Telas integradas à `main` pelo [PR #35](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/35) |
+| Demais implementações e integração | Em desenvolvimento na Sprint II |
+| Sprint Review II | Prevista para 06/11/2026, conforme o roteiro da Turma B |
+| Versão final | Congelamento até 12/11/2026, conforme o roteiro da Turma B |
 
-> Todos os dados deste repositório são fictícios. Nenhum dado real de cliente da Bulbe Energia é utilizado.
+Todos os nomes, valores, faturas, datas e protocolos das telas são exemplos fictícios para fins acadêmicos. O grupo mantém esses exemplos conforme a orientação do professor. Nenhum dado real de cliente da Bulbe é utilizado.

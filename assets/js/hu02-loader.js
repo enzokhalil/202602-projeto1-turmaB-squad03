@@ -5,7 +5,7 @@
   function falha() {
     const content = document.querySelector('#conteudo-contas');
     content.setAttribute('aria-busy', 'false');
-    content.innerHTML = '<div class="hu02-card hu02-feedback"><h2>Não foi possível abrir as contas</h2><p>Extraia a pasta completa do ZIP e mantenha as pastas assets, data e pages juntas.</p><button class="hu02-button" type="button">Tentar novamente</button></div>';
+    content.innerHTML = '<div class="hu02-card hu02-feedback"><h2>Não foi possível abrir as contas</h2><p>Extraia a pasta completa do ZIP e mantenha a estrutura das pastas assets e data.</p><button class="hu02-button" type="button">Tentar novamente</button></div>';
     content.querySelector('button').addEventListener('click', () => location.reload());
   }
   if (location.protocol === 'file:') {

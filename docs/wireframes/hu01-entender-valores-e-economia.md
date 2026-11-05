@@ -28,6 +28,13 @@ Exportações completas dos quadros do novo arquivo Figma. Cada imagem preserva 
 
 ![Minha economia](hu01-entender-valores-e-economia.png)
 
+## Telas HTML
+
+- [Minha economia](../../assets/telas/hu01-minha-economia.html).
+- [Entenda sua economia](../../assets/telas/hu01-entenda-sua-economia.html).
+
+As páginas usam o template compartilhado e dados estáticos fictícios. O CSS específico fica em `assets/css/hu01-economia.css`.
+
 ## Navegação
 
 O [menu lateral](geral-menu-lateral.png) reúne os acessos às áreas do aplicativo. As telas de detalhe e os estados alternativos desta HU estão relacionados na tabela acima.

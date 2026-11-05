@@ -4,17 +4,17 @@ Responsável: Rafael Lombardi. Implementação em HTML, CSS e JavaScript puro, b
 
 ## Executar
 
-Para visualizar por duplo clique, abra `index.html` da pasta extraída do ZIP, ou `pages/contas.html`. O index do pacote é um atalho para Minhas contas; o index compartilhado do repositório é preservado. A prévia local usa os mesmos dados fictícios incorporados em um script clássico.
+Para visualizar por duplo clique, abra `index.html` da pasta extraída do ZIP, ou `assets/telas/contas.html`. O index do pacote é um atalho para Minhas contas; o index compartilhado do repositório é preservado. A prévia local usa os mesmos dados fictícios incorporados em um script clássico.
 
-Para trabalhar no projeto, abra a raiz no VS Code. Use **Open with Live Server** em `pages/contas.html`, ou execute `python3 -m http.server 8772` na raiz e abra `http://localhost:8772/pages/contas.html`.
+Para trabalhar no projeto, abra a raiz no VS Code. Use **Open with Live Server** em `assets/telas/contas.html`, ou execute `python3 -m http.server 8772` na raiz e abra `http://localhost:8772/assets/telas/contas.html`.
 
 Com Live Server, as páginas continuam usando `api.js` e `fetch` para ler os arquivos JSON. A abertura direta usa `hu02-offline.js`, gerado das mesmas fontes e dos mesmos JSONs, sem depender de servidor. Não há instalação de dependências. Após alterar dados ou lógica, execute `python3 scripts/gerar-demo-hu02.py` para atualizar a demonstração; use `--check` para verificar se está sincronizada.
 
 ## Arquivos
 
-- `pages/contas.html`: visão geral, próxima conta, instalação e atalhos.
-- `pages/fatura.html`: conta selecionada, valor, situação, vencimento e detalhamento disponível.
-- `pages/historico.html`: contas emitidas, valores e situações; previsões ficam em uma seção separada.
+- `assets/telas/contas.html`: visão geral, próxima conta, instalação e atalhos.
+- `assets/telas/fatura.html`: conta selecionada, valor, situação, vencimento e detalhamento disponível.
+- `assets/telas/historico.html`: contas emitidas, valores e situações; previsões ficam em uma seção separada.
 - `assets/css/hu02.css`: somente os estilos do conteúdo da HU02.
 - `assets/js/hu02-loader.js`: escolhe o modo local ou com servidor e informa uma falha de inicialização.
 - `assets/js/hu02-offline.js`: demonstração gerada automaticamente para abertura por duplo clique.

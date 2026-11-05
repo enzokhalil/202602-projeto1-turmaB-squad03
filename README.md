@@ -62,7 +62,7 @@ O [guia do template](assets/templates/README.md) explica como inserir o conteúd
 2. Abra a pasta no VS Code.
 3. Instale a extensão Live Server, sugerida pelo projeto.
 4. Clique com o botão direito em `index.html` e escolha **Open with Live Server**.
-5. Acesse as páginas da solução em `pages/`, conforme as entregas integradas à sua branch.
+5. Acesse as páginas da solução em [assets/telas/](assets/telas/README.md), conforme as entregas integradas à sua branch.
 
 O Live Server é o modo de execução do projeto com JSON via `fetch`. O template e algumas prévias estáticas também abrem por duplo clique.
 
@@ -70,13 +70,14 @@ O Live Server é o modo de execução do projeto com JSON via `fetch`. O templat
 
 ```text
 ├── index.html          # Entrada do projeto
-├── pages/              # Páginas HTML das histórias
+├── pages/              # Endereços antigos e página de exemplo
 ├── assets/
 │   ├── css/            # Estilos compartilhados e de cada HU
 │   ├── js/             # Template, acesso a dados e lógica das páginas
 │   ├── img/            # Logo e recursos visuais
 │   ├── fonts/          # Fonte Inter e licença
-│   └── templates/      # Prévia e guia do componente compartilhado
+│   ├── templates/      # Prévia e guia do componente compartilhado
+│   └── telas/          # Telas HTML entregues por integrante
 ├── data/               # Dados fictícios em JSON
 ├── historias/          # Histórias e critérios de aceite
 ├── docs/
@@ -108,7 +109,7 @@ Cada integrante responde por uma história e suas telas. A implementação ocorr
 
 ## 9. Entregas
 
-Situação conferida em 04/11/2026. Uma prévia HTML não representa, por si só, a conclusão de todos os critérios da história.
+Situação conferida em 05/11/2026. Uma prévia HTML não representa, por si só, a conclusão de todos os critérios da história.
 
 | Marco | Situação |
 | --- | --- |
@@ -117,7 +118,7 @@ Situação conferida em 04/11/2026. Uma prévia HTML não representa, por si só
 | Wireframes | Conjunto atualizado em `docs/wireframes/` |
 | Sprint Review I | [Registro da Sprint I](docs/sprints/sprint-review-1.md) |
 | Template | Integrado à `main` pelo [PR #32](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/32) |
-| HU01 | Duas prévias HTML criadas. O [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) entrou na branch do template; integração à `main` pendente nesta conferência |
+| HU01 | Duas prévias HTML recuperadas do [PR #33](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/33) e incluídas na reorganização em `assets/telas/`; integração desta branch à `main` pendente |
 | HU02 | Páginas integradas à `main` pelo [PR #34](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/34) |
 | HU06 | Telas integradas à `main` pelo [PR #35](https://github.com/enzokhalil/202602-projeto1-turmaB-squad03/pull/35) |
 | Demais implementações e integração | Em desenvolvimento na Sprint II |

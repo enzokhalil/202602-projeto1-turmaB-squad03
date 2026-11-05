@@ -94,7 +94,7 @@
         ${c.descontoPercentual != null ? `<span class="hu03-benefit">${c.descontoPercentual}% sobre a energia elegível</span>` : ''}
       </article>
 
-      ${acao({ titulo: 'Documento da contratação', texto: 'Consultar a cópia disponível', icon: iconeDoc, href: withQuery('documento.html') })}
+      ${acao({ titulo: 'Documento da contratação', texto: 'Consultar a cópia disponível', icon: iconeDoc, href: withQuery('hu03-documento.html') })}
       ${acao({ titulo: 'Condições e cancelamento', texto: 'Veja o que está registrado', icon: iconeInfo, scroll: 'hu03-condicoes' })}
       ${acao({ titulo: 'Não reconheço esta adesão', texto: 'Pedir esclarecimento ao atendimento', icon: iconeFone, dialog: 'reconheço', teal: true })}
 
@@ -105,7 +105,7 @@
           ${(c.eventos || []).map((e) => `<li><b>${diaMes(e.data)}</b> • ${escapar(e.descricao)}</li>`).join('')}
         </ul>
         ${c.primeiraReferencia && c.primeiraFaturaVencimento ? `<p class="hu03-text">Primeira referência: ${refMesAno(c.primeiraReferencia)}. Cobrança Bulbe disponível com vencimento em ${dataBR(c.primeiraFaturaVencimento)}.</p>` : ''}
-        <a class="hu03-link" href="contas.html?cliente=${dados.clienteId}">Consultar a primeira fatura →</a>
+        <a class="hu03-link" href="hu02-contas.html?cliente=${dados.clienteId}">Consultar a primeira fatura →</a>
       </section>
 
       <section class="hu03-card" id="hu03-condicoes">
@@ -124,7 +124,7 @@
         <button class="hu03-link" type="button" data-dialog="servico">Entender como a Bulbe funciona →</button>
       </div>
 
-      <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../index.html">Início do projeto ↗</a></footer>`;
+      <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../../index.html">Início do projeto ↗</a></footer>`;
   }
 
   function renderDocumento(c) {
@@ -143,9 +143,9 @@
       </article>
 
       <button class="hu03-button" type="button" data-dialog="copia">Pedir a cópia ao atendimento</button>
-      <a class="hu03-link" href="${escapar(withQuery('contratacao.html'))}">Voltar à minha contratação →</a>
+      <a class="hu03-link" href="${escapar(withQuery('hu03-contratacao.html'))}">Voltar à minha contratação →</a>
 
-      <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../index.html">Início do projeto ↗</a></footer>`;
+      <footer class="hu03-demo"><span>Demonstração · dados fictícios</span><a href="../../index.html">Início do projeto ↗</a></footer>`;
   }
 
   function render() {
@@ -201,13 +201,13 @@
   }
 
   // Áreas já entregues na main recebem link real; as demais abrem um aviso.
-  const destinos = { faturas: () => withQuery('contas.html') };
+  const destinos = { faturas: () => withQuery('hu02-contas.html') };
   const nomes = { economia: 'Minha economia', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
 
   function navegar(area) {
     if (destinos[area]) { location.href = destinos[area](); return; }
     if (area === 'contrato') { // já estamos na HU03; volta para a tela principal se preciso.
-      if (tela === 'documento') location.href = withQuery('contratacao.html');
+      if (tela === 'documento') location.href = withQuery('hu03-contratacao.html');
       else app.setAttribute('active-area', 'contrato');
       return;
     }

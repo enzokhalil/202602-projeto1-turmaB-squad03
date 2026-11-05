@@ -4,17 +4,17 @@ Responsável: Rafael Lombardi. Implementação em HTML, CSS e JavaScript puro, b
 
 ## Executar
 
-Para visualizar por duplo clique, abra `index.html` da pasta extraída do ZIP, ou `assets/telas/contas.html`. O index do pacote é um atalho para Minhas contas; o index compartilhado do repositório é preservado. A prévia local usa os mesmos dados fictícios incorporados em um script clássico.
+Para visualizar por duplo clique, abra `index.html` da pasta extraída do ZIP, ou `assets/telas/hu02-contas.html`. O index do pacote é um atalho para Minhas contas; o index compartilhado do repositório é preservado. A prévia local usa os mesmos dados fictícios incorporados em um script clássico.
 
-Para trabalhar no projeto, abra a raiz no VS Code. Use **Open with Live Server** em `assets/telas/contas.html`, ou execute `python3 -m http.server 8772` na raiz e abra `http://localhost:8772/assets/telas/contas.html`.
+Para trabalhar no projeto, abra a raiz no VS Code. Use **Open with Live Server** em `assets/telas/hu02-contas.html`, ou execute `python3 -m http.server 8772` na raiz e abra `http://localhost:8772/assets/telas/hu02-contas.html`.
 
 Com Live Server, as páginas continuam usando `api.js` e `fetch` para ler os arquivos JSON. A abertura direta usa `hu02-offline.js`, gerado das mesmas fontes e dos mesmos JSONs, sem depender de servidor. Não há instalação de dependências. Após alterar dados ou lógica, execute `python3 scripts/gerar-demo-hu02.py` para atualizar a demonstração; use `--check` para verificar se está sincronizada.
 
 ## Arquivos
 
-- `assets/telas/contas.html`: visão geral, próxima conta, instalação e atalhos.
-- `assets/telas/fatura.html`: conta selecionada, valor, situação, vencimento e detalhamento disponível.
-- `assets/telas/historico.html`: contas emitidas, valores e situações; previsões ficam em uma seção separada.
+- `assets/telas/hu02-contas.html`: visão geral, próxima conta, instalação e atalhos.
+- `assets/telas/hu02-fatura.html`: conta selecionada, valor, situação, vencimento e detalhamento disponível.
+- `assets/telas/hu02-historico.html`: contas emitidas, valores e situações; previsões ficam em uma seção separada.
 - `assets/css/hu02.css`: somente os estilos do conteúdo da HU02.
 - `assets/js/hu02-loader.js`: escolhe o modo local ou com servidor e informa uma falha de inicialização.
 - `assets/js/hu02-offline.js`: demonstração gerada automaticamente para abertura por duplo clique.
@@ -39,7 +39,7 @@ O histórico possui links para cada conta. A previsão continua identificada com
 
 ## Integração com as outras HUs
 
-`bulbe:navigate` é tratado em `hu02.js`. Faturas leva a `contas.html`. Os destinos das outras áreas ficam centralizados no objeto `destinos`. Quando os integrantes entregarem as páginas, acrescentar seus caminhos ali. Enquanto não existem, o protótipo explica que a área ainda será conectada e mantém Faturas selecionada, sem navegar para URLs inexistentes.
+`bulbe:navigate` é tratado em `hu02.js`. Faturas leva a `hu02-contas.html`. Os destinos das outras áreas ficam centralizados no objeto `destinos`. Quando os integrantes entregarem as páginas, acrescentar seus caminhos ali. Enquanto não existem, o protótipo explica que a área ainda será conectada e mantém Faturas selecionada, sem navegar para URLs inexistentes.
 
 O `index.html` do projeto inclui um link para a HU02.
 

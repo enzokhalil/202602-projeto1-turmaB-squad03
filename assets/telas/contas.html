@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minhas contas — protótipo da HU02 com dados fictícios da Bulbe.">
+  <title>Bulbe | Minhas contas</title>
+  <link rel="stylesheet" href="../css/iphone-se-preview.css">
+  <link rel="stylesheet" href="../css/hu02.css">
+  <script defer src="../js/app-template.js"></script>
+  <script defer src="../js/hu02-loader.js"></script>
+</head>
+<body data-hu02-tela="contas">
+  <div class="iphone-se" aria-label="Prévia do aplicativo em iPhone SE">
+    <div class="iphone-se__speaker" aria-hidden="true"></div>
+    <div class="iphone-se__screen">
+      <bulbe-app profile-initial="M" active-area="faturas">
+        <section class="hu02" aria-label="Minhas contas">
+          <header class="hu02-hero"><p class="hu02-eyebrow">Visão geral</p><h1>Minhas contas</h1><p class="hu02-subtitle">Valores, vencimentos e pagamentos</p><p class="hu02-greeting" id="saudacao">Marina, sua próxima conta está aqui.</p><label class="hu02-installation" hidden id="instalacao-label">Instalação <select id="instalacao" aria-label="Escolher instalação"></select></label></header>
+          <div class="hu02-content">
+            <div id="conteudo-contas" aria-live="polite" aria-busy="true">
+              <div class="hu02-card hu02-feedback" role="status">Carregando suas contas…</div>
+            </div>
+            <footer class="hu02-demo"><span>Demonstração · dados fictícios</span><a href="../../index.html">Início do projeto ↗</a></footer>
+          </div>
+        </section>
+      </bulbe-app>
+      <noscript><p class="hu02-noscript">Ative o JavaScript para consultar as contas desta demonstração.</p></noscript>
+    </div>
+    <div class="iphone-se__home" aria-hidden="true"></div>
+  </div>
+  <dialog class="hu02-dialog" aria-labelledby="dialogo-titulo">
+    <h2 id="dialogo-titulo"></h2><p id="dialogo-texto"></p>
+    <form method="dialog"><button>Entendi</button></form>
+  </dialog>
+</body>
+</html>

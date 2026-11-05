@@ -10,10 +10,10 @@ O botão de três traços abre o menu. O botão de fechar, o clique na região e
 
 ## Reutilizar nas páginas
 
-Em um arquivo de `pages/`, carregue o script e coloque o conteúdo dentro do componente:
+Em um arquivo de `assets/telas/`, carregue o script e coloque o conteúdo dentro do componente:
 
 ```html
-<script defer src="../assets/js/app-template.js"></script>
+<script defer src="../js/app-template.js"></script>
 
 <bulbe-app profile-initial="M" active-area="contrato">
   <section>

@@ -30,18 +30,9 @@ Os atributos `profile-initial` e `active-area` podem mudar após a criação do 
 
 ## Conectar a navegação
 
-Os menus notificam a página pelo evento `bulbe:navigate`. O template destaca a área selecionada e fecha o menu lateral. A página que usa o template controla a troca de conteúdo ou de URL.
+O menu fecha e abre a tela inicial da área escolhida, preservando cliente e instalação na URL. A página pode interceptar o evento cancelável `bulbe:navigate` com `event.preventDefault()` quando precisa tratar uma ação local, como mover o foco para um quadro do mapa de Atendimento.
 
-```js
-const app = document.querySelector('bulbe-app');
-
-app.addEventListener('bulbe:navigate', (event) => {
-  const area = event.detail.area;
-  // Conecte aqui a navegação das telas implementadas pelo grupo.
-});
-```
-
-As áreas são `faturas`, `economia`, `contrato`, `servico`, `duas-contas`, `ajuda` e `indicacoes`. As quatro abas inferiores são Faturas, Economia, Contrato e Ajuda. A área `duas-contas` também destaca a aba Faturas. As áreas Serviço e Indicações não destacam uma aba inferior.
+As áreas são `faturas`, `economia`, `contrato`, `servico`, `duas-contas` e `ajuda`. As quatro abas inferiores são Faturas, Economia, Contrato e Ajuda. A área `duas-contas` também destaca a aba Faturas.
 
 O avatar é apenas uma identificação visual. Se a HU precisar de título, saudação ou seletor de instalação, esses elementos entram no conteúdo daquela página, dentro do componente.
 

@@ -91,7 +91,7 @@ body {
 .servico-hero--estado { min-height: 149px; }
 
 /* seta de voltar no lugar do botão de menu (telas internas do Figma) */
-.servico-voltar { position: absolute; z-index: 5; left: 12px; top: 12px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px; background: #1308a1; color: white; }
+.servico-voltar { position: absolute; left: 12px; top: 76px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px; background: #1308a1; color: white; }
 .servico-voltar svg { width: 24px; height: 24px; }
 
 .servico-stack { position: relative; display: flex; flex-direction: column; gap: 12px; margin-top: -42px; padding: 0 24px 32px; }
@@ -136,9 +136,6 @@ body {
 .servico-page a:focus-visible { outline: 3px solid #ffb400; outline-offset: 4px; }
 
 /* aviso curto quando uma área do menu pertence a outra história */
-.servico-aviso { position: absolute; left: 50%; bottom: 96px; z-index: 20; width: max-content; max-width: calc(100% - 32px); margin: 0; padding: 12px 18px; border-radius: 14px; background: #24263c; color: white; font: 400 12.5px/1.45 Inter, Arial, sans-serif; text-align: center; opacity: 0; transform: translate(-50%, 12px); transition: opacity .2s, transform .2s; pointer-events: none; }
-.servico-aviso--visivel { opacity: 1; transform: translate(-50%, 0); }
-@media (prefers-reduced-motion: reduce) { .servico-aviso { transition: none; } }
 @media (max-width: 350px) {
   .servico-hero { padding-left: 20px; padding-right: 20px; }
   .servico-hero h1 { font-size: 27px; }

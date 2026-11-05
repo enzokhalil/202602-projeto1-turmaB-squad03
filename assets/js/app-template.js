@@ -12,13 +12,12 @@ if (!document.querySelector(`link[href="${fontStylesheet}"]`)) {
 }
 
 const areas = [
-  { id: 'faturas', label: 'Minhas contas', description: 'Fatura atual e histórico', icon: 'faturas.svg', tab: 'Faturas' },
-  { id: 'economia', label: 'Minha economia', description: 'Resultado, cálculo e evolução', icon: 'economia.svg', tab: 'Economia', tabIcon: 'tab-economia.svg', chevron: 'chevron-green.svg' },
-  { id: 'contrato', label: 'Minha contratação', description: 'Condições e documento', icon: 'contrato.svg', tab: 'Contrato', tabIcon: 'tab-contrato.svg', chevron: 'chevron-purple.svg' },
-  { id: 'servico', label: 'Como funciona a Bulbe', description: 'Explicação do serviço', icon: 'servico.svg' },
-  { id: 'duas-contas', label: 'Entenda suas contas', description: 'Cobranças Bulbe e distribuidora', icon: 'duas-contas.svg' },
-  { id: 'ajuda', label: 'Atendimento', description: 'Contato, protocolo e cancelamento', icon: 'ajuda.svg', tab: 'Ajuda', tabIcon: 'tab-ajuda.svg', chevron: 'chevron-teal.svg' },
-  { id: 'indicacoes', label: 'Indique e ganhe', description: 'Compartilhe a Bulbe com amigos', icon: 'indicacoes.svg', chevron: 'chevron-green.svg' },
+  { id: 'faturas', route: 'hu02-contas.html', label: 'Minhas contas', description: 'Fatura atual e histórico', icon: 'faturas.svg', tab: 'Faturas' },
+  { id: 'economia', route: 'hu01-minha-economia.html', label: 'Minha economia', description: 'Resultado, cálculo e evolução', icon: 'economia.svg', tab: 'Economia', tabIcon: 'tab-economia.svg', chevron: 'chevron-green.svg' },
+  { id: 'contrato', route: 'hu03-contratacao.html', label: 'Minha contratação', description: 'Condições e documento', icon: 'contrato.svg', tab: 'Contrato', tabIcon: 'tab-contrato.svg', chevron: 'chevron-purple.svg' },
+  { id: 'servico', route: 'hu04.html#/servico', label: 'Como funciona a Bulbe', description: 'Explicação do serviço', icon: 'servico.svg' },
+  { id: 'duas-contas', route: 'hu05-entenda-suas-contas.html', label: 'Entenda suas contas', description: 'Cobranças Bulbe e distribuidora', icon: 'duas-contas.svg' },
+  { id: 'ajuda', route: 'hu06-bulbe-mapa.html#/atendimento', label: 'Atendimento', description: 'Contato, protocolo e cancelamento', icon: 'ajuda.svg', tab: 'Ajuda', tabIcon: 'tab-ajuda.svg', chevron: 'chevron-teal.svg' },
 ];
 
 const brand = `<span class="brand" role="img" aria-label="Bulbe">
@@ -86,9 +85,11 @@ class BulbeApp extends HTMLElement {
       const button = event.target.closest('[data-area]');
       if (!button) return;
       const area = button.dataset.area;
-      this.setAttribute('active-area', area);
       this.closeMenu();
-      this.dispatchEvent(new CustomEvent('bulbe:navigate', { detail: { area }, bubbles: true, composed: true }));
+      const navigate = this.dispatchEvent(new CustomEvent('bulbe:navigate', {
+        detail: { area }, bubbles: true, composed: true, cancelable: true,
+      }));
+      if (navigate) this.navigate(area);
     });
     this.menu.addEventListener('keydown', (event) => this.handleMenuKey(event));
   }
@@ -107,6 +108,16 @@ class BulbeApp extends HTMLElement {
       if (button.dataset.area === active) button.setAttribute('aria-current', 'page');
       else button.removeAttribute('aria-current');
     }
+  }
+
+  navigate(area, search = location.search) {
+    const route = areas.find((entry) => entry.id === area).route;
+    const destination = new URL(`../telas/${route}`, scriptUrl);
+    const current = new URLSearchParams(search);
+    for (const key of ['cliente', 'instalacao']) {
+      if (current.has(key)) destination.searchParams.set(key, current.get(key));
+    }
+    if (destination.href !== location.href) location.assign(destination.href);
   }
 
   openMenu() {

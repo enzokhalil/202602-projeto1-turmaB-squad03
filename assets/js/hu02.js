@@ -127,17 +127,15 @@ function dialogo(titulo, texto) {
   document.querySelector('dialog').showModal();
 }
 
-// As páginas das outras HUs ainda não existem na main. Centralize os destinos
-// aqui quando forem entregues, sem modificar o template compartilhado.
-const destinos = { faturas: () => url('hu02-contas'), contrato: () => url('hu03-contratacao'), 'duas-contas': () => url('hu05-entenda-suas-contas') };
-const nomes = { economia: 'Minha economia', contrato: 'Minha contratação', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
 function navegar(area) {
-  if (destinos[area]) { location.href = destinos[area](); return; }
-  app.setAttribute('active-area', 'faturas');
-  dialogo(nomes[area] || 'Outra área', 'Esta área será conectada à tela do integrante responsável quando ela estiver disponível. Nesta entrega, você pode navegar por Minhas contas, Minha fatura e Histórico de contas.');
+  const search = new URL(url('hu02-contas'), location.href).search;
+  app.navigate(area, search);
 }
 
-app.addEventListener('bulbe:navigate', (event) => navegar(event.detail.area));
+app.addEventListener('bulbe:navigate', (event) => {
+  event.preventDefault();
+  navegar(event.detail.area);
+});
 document.addEventListener('click', (event) => {
   const target = event.target.closest('[data-tentar], [data-area], [data-pagamento]');
   if (!target) return;

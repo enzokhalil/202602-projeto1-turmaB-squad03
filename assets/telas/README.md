@@ -11,10 +11,9 @@ Esta pasta reúne as implementações HTML entregues pelo grupo. O CSS continua 
 | HU02 | Rafael Lombardi | [Histórico de contas](hu02-historico.html) |
 | HU03 | Rhuan Matavellhe | [Minha contratação](hu03-contratacao.html) |
 | HU03 | Rhuan Matavellhe | [Meu documento](hu03-documento.html) |
+| HU04 | Igor Mata Machado | [Como a Bulbe funciona](hu04.html#/servico) |
 | HU05 | Marcio Filho | [Entenda suas contas](hu05-entenda-suas-contas.html) |
 | HU06 | Caio Campos | [Atendimento e telas da HU06](hu06-bulbe-mapa.html#/atendimento) |
-
-A HU04 tem [wireframe](../../docs/wireframes/hu04-como-a-bulbe-funciona.png) e aguarda a entrega HTML.
 
 O arquivo da HU06 contém as telas de atendimento, solicitações e cancelamento, além dos estados alternativos e do mapa de telas.
 

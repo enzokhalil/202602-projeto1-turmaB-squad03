@@ -1,0 +1,95 @@
+/* Conteúdo exclusivo da HU03. O cabeçalho e os menus pertencem a bulbe-app. */
+body { font-family: Inter, Arial, sans-serif; color: #202438; }
+.hu03 { --hu03-blue: #1308a1; --hu03-purple: #7141ad; --hu03-teal: #086c83; --hu03-green: #1c5a39; --hu03-muted: #626779; min-height: 100%; background: #f7f6f0; }
+.hu03 *, .hu03-dialog * { box-sizing: border-box; }
+.hu03 [hidden] { display: none !important; }
+.hu03 button, .hu03 select, .hu03-dialog button { font: inherit; }
+.hu03 a, .hu03 button { -webkit-tap-highlight-color: transparent; }
+.hu03 :is(a, button, select):focus-visible, .hu03-dialog :focus-visible { outline: 3px solid #ba7900; outline-offset: 3px; }
+
+/* Cabeçalho da tela, dentro do conteúdo do template. */
+.hu03-hero { position: relative; isolation: isolate; min-height: 251px; padding: 15px 24px 57px; color: white; overflow: hidden; background: var(--hu03-blue); border-radius: 0 0 50% 50% / 0 0 28px 28px; }
+.hu03-hero::before { content: ''; position: absolute; z-index: -1; width: 240px; height: 240px; right: -110px; top: -70px; background: url('../img/app-template/drawer-sun.svg') center / contain no-repeat; pointer-events: none; }
+.hu03--internal .hu03-hero { min-height: 150px; padding-top: 10px; padding-bottom: 46px; }
+.hu03--internal .hu03-hero::before { width: 144px; height: 144px; right: -65px; top: -42px; }
+.hu03--internal .hu03-hero:has(.hu03-back) { min-height: 182px; }
+.hu03-eyebrow { margin: 0 0 6px; color: #d0cbff; font-size: 11px; line-height: 14px; text-transform: uppercase; letter-spacing: .04em; }
+.hu03 h1 { margin: 0; font-size: 31px; line-height: 1.18; letter-spacing: -.6px; font-weight: 700; }
+.hu03--internal h1 { font-size: 28px; }
+.hu03-subtitle { margin: 4px 0 0; font-size: 13px; line-height: 19px; font-weight: 600; }
+.hu03-greeting { margin: 18px 0 14px; font-size: 13px; line-height: 19px; color: #f1edff; }
+.hu03-caption { margin: 7px 0 0; font-size: 12px; line-height: 18px; color: #f1edff; }
+.hu03-installation { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; min-height: 36px; padding: 0 12px; border-radius: 20px; background: #3024b8; font-size: 12px; }
+.hu03-installation select { min-width: 0; max-width: 100%; min-height: 44px; border: 0; color: white; background: transparent; cursor: pointer; }
+.hu03-installation option { color: #202438; background: white; }
+.hu03-back { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin: -8px 0 4px; color: white; font-size: 12px; text-decoration: none; }
+.hu03-back svg { width: 18px; height: 18px; }
+
+/* Conteúdo rolável, subindo sobre a curva do cabeçalho. */
+.hu03-content { position: relative; margin-top: -48px; padding: 0 24px 24px; display: flex; flex-direction: column; gap: 16px; }
+.hu03-card { padding: 20px; background: white; border-radius: 24px; box-shadow: 0 3px 0 #2024380b; }
+.hu03-card--cream { background: #fdf9ee; }
+.hu03-card h2 { margin: 0 0 14px; font-size: 17px; line-height: 23px; letter-spacing: -.2px; font-weight: 700; }
+.hu03-card h2.hu03-accent { color: var(--hu03-purple); }
+
+/* Pares rótulo/valor das informações registradas. */
+.hu03-rows { margin: 0; }
+.hu03-rows div { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; font-size: 13px; line-height: 19px; }
+.hu03-rows dt { margin: 0; color: var(--hu03-muted); }
+.hu03-rows dd { margin: 0; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.hu03-rows dd.hu03-indisponivel { color: #3a3f52; }
+
+/* Selos de benefício e de aviso. */
+.hu03-benefit { display: block; margin-top: 12px; padding: 12px 14px; border-radius: 14px; background: #d5f3dd; color: var(--hu03-green); font-size: 13px; font-weight: 600; line-height: 18px; }
+.hu03-tag { display: inline-block; padding: 7px 12px; border-radius: 10px; font-size: 11px; font-weight: 700; line-height: 15px; letter-spacing: .03em; text-transform: uppercase; }
+.hu03-tag--green { background: #d5f3dd; color: var(--hu03-green); }
+.hu03-tag--lavender { background: #eeebff; color: #504391; }
+.hu03-tag--block { display: block; margin-bottom: 14px; }
+
+/* Cartões de ação com ícone, título e descrição. */
+.hu03-action { display: flex; align-items: center; gap: 14px; width: 100%; min-height: 72px; padding: 16px; border: 0; border-radius: 20px; background: white; box-shadow: 0 3px 0 #2024380b; color: var(--hu03-purple); text-decoration: none; text-align: left; cursor: pointer; }
+.hu03-action__icon { display: grid; place-items: center; width: 40px; height: 40px; flex: 0 0 40px; border-radius: 13px; background: #f0e8fa; color: var(--hu03-purple); }
+.hu03-action__icon svg { width: 22px; height: 22px; }
+.hu03-action__copy { flex: 1; min-width: 0; }
+.hu03-action strong { display: block; font-size: 14px; line-height: 20px; font-weight: 700; }
+.hu03-action small { display: block; margin-top: 3px; color: var(--hu03-muted); font-size: 12px; line-height: 17px; font-weight: 400; }
+.hu03-action--teal { color: var(--hu03-teal); }
+.hu03-action--teal .hu03-action__icon { background: #e2f3f7; color: var(--hu03-teal); }
+.hu03-action__chevron { flex: 0 0 9px; width: 9px; height: 16px; color: #c4b8dd; }
+.hu03-action--teal .hu03-action__chevron { color: #a9cdd6; }
+
+/* Linha do tempo e textos de apoio. */
+.hu03-timeline { margin: 14px 0 0; padding: 0; list-style: none; font-size: 13px; line-height: 23px; }
+.hu03-timeline b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.hu03-text { margin: 14px 0 0; font-size: 13px; line-height: 20px; }
+.hu03-note { margin: 12px 0 0; font-size: 12px; line-height: 18px; color: var(--hu03-muted); }
+
+/* Links em texto, com área de toque confortável. */
+.hu03-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--hu03-blue); font-size: 13px; font-weight: 700; text-decoration: none; background: transparent; border: 0; cursor: pointer; }
+.hu03-card .hu03-link { margin-top: 10px; }
+.hu03-links { display: flex; flex-direction: column; gap: 2px; }
+
+/* Botão principal. */
+.hu03-button { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 52px; padding: 14px 16px; border: 0; border-radius: 16px; background: var(--hu03-blue); color: white; font-size: 14px; font-weight: 700; line-height: 20px; text-decoration: none; cursor: pointer; }
+
+/* Feedback, rodapé de demonstração e diálogo. */
+.hu03-feedback { font-size: 14px; line-height: 22px; }
+.hu03-feedback h2 { color: #202438; }
+.hu03-feedback p { margin: 0 0 16px; }
+.hu03-demo { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-top: 4px; color: var(--hu03-muted); font-size: 10px; line-height: 16px; }
+.hu03-demo a { display: inline-flex; align-items: center; min-height: 44px; color: inherit; }
+.hu03-demo span { display: flex; align-items: center; }
+.hu03-dialog { width: min(350px, calc(100% - 32px)); padding: 24px; border: 0; border-radius: 24px; color: #202438; font-family: Inter, Arial, sans-serif; box-shadow: 0 24px 80px #0003; }
+.hu03-dialog::backdrop { background: #05051a80; }
+.hu03-dialog h2 { margin: 0 0 12px; font-size: 20px; }
+.hu03-dialog p { font-size: 14px; line-height: 22px; margin: 0 0 20px; }
+.hu03-dialog button { min-height: 46px; width: 100%; border: 0; border-radius: 14px; padding: 12px; background: var(--hu03-blue); color: white; font-weight: 600; cursor: pointer; }
+.hu03-noscript { padding: 24px; background: #fff0d5; }
+
+@media (max-width: 350px) {
+  .hu03-hero { padding-left: 20px; padding-right: 20px; }
+  .hu03-content { padding-left: 16px; padding-right: 16px; }
+  .hu03 h1 { font-size: 27px; }
+  .hu03--internal h1 { font-size: 25px; }
+  .hu03-card { padding: 18px; }
+}

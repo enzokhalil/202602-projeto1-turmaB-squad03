@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Minha contratação — protótipo da HU03 com dados fictícios da Bulbe.">
+  <title>Bulbe | Minha contratação</title>
+  <link rel="stylesheet" href="../assets/css/iphone-se-preview.css">
+  <link rel="stylesheet" href="../assets/css/hu03.css">
+  <script defer src="../assets/js/app-template.js"></script>
+  <script defer src="../assets/js/hu03.js"></script>
+</head>
+<body data-hu03-tela="contratacao">
+  <div class="iphone-se" aria-label="Prévia do aplicativo em iPhone SE">
+    <div class="iphone-se__speaker" aria-hidden="true"></div>
+    <div class="iphone-se__screen">
+      <bulbe-app profile-initial="M" active-area="contrato">
+        <section class="hu03" aria-label="Minha contratação">
+          <header class="hu03-hero">
+            <p class="hu03-eyebrow">Contrato</p>
+            <h1>Minha contratação</h1>
+            <p class="hu03-subtitle">Seu vínculo, em um só lugar</p>
+            <p class="hu03-greeting" id="hu03-saudacao">Acompanhe sua contratação.</p>
+            <label class="hu03-installation" hidden id="hu03-instalacao-label">
+              <select id="hu03-instalacao" aria-label="Escolher instalação"></select>
+            </label>
+          </header>
+          <div class="hu03-content" id="hu03-conteudo" aria-live="polite" aria-busy="true">
+            <div class="hu03-card hu03-feedback" role="status">Carregando sua contratação…</div>
+          </div>
+        </section>
+      </bulbe-app>
+      <noscript><p class="hu03-noscript">Ative o JavaScript para consultar a contratação desta demonstração.</p></noscript>
+    </div>
+    <div class="iphone-se__home" aria-hidden="true"></div>
+  </div>
+  <dialog class="hu03-dialog" aria-labelledby="hu03-dialogo-titulo">
+    <h2 id="hu03-dialogo-titulo"></h2><p id="hu03-dialogo-texto"></p>
+    <form method="dialog"><button>Entendi</button></form>
+  </dialog>
+</body>
+</html>

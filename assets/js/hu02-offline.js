@@ -1,5 +1,5 @@
-// GERADO por scripts/gerar-demo-hu02.py. Não editar diretamente.
-// Somente dados fictícios. Em HTTP, o loader usa api.js/fetch normalmente.
+// GERADO por scripts/gerar-demo-hu02.py. N�o editar diretamente.
+// Somente dados fict�cios. Em HTTP, o loader usa api.js/fetch normalmente.
 (() => {
 const demo = {"clientes":[{"id":1,"nome":"Marina Souza","cidade":"Contagem","dataAdesao":"2026-09-02","status":"em_conexao","canalPreferido":"whatsapp","whatsappConfirmado":false,"emailConfirmado":true,"consumoMedioKwh":310,"descontoPercentual":15},{"id":2,"nome":"João Pereira","cidade":"Belo Horizonte","dataAdesao":"2026-08-14","status":"conectado","canalPreferido":"email","whatsappConfirmado":true,"emailConfirmado":true,"consumoMedioKwh":220,"descontoPercentual":15},{"id":3,"nome":"Ana Ribeiro","cidade":"Uberlândia","dataAdesao":"2026-09-20","status":"aguardando_qualificacao","canalPreferido":"app","whatsappConfirmado":true,"emailConfirmado":false,"consumoMedioKwh":180,"descontoPercentual":12}],"faturas":[{"id":101,"clienteId":2,"referencia":"2026-09","vencimento":"2026-10-10","valor":168.4,"economia":29.72,"status":"aberta","pixCopiaECola":"PIX-FICTICIO-0001"},{"id":102,"clienteId":1,"referencia":"2026-11","vencimento":"2026-12-12","valor":231.9,"economia":40.92,"status":"prevista","pixCopiaECola":null,"instalacao":"3013588579"},{"id":201,"clienteId":1,"instalacao":"3013588579","referencia":"2026-10","vencimento":"2026-11-12","valor":260.72,"economia":46.01,"energiaElegivel":306.73,"outros":0,"status":"aberta","pixCopiaECola":null},{"id":202,"clienteId":1,"instalacao":"3013588579","referencia":"2026-09","vencimento":"2026-10-12","valor":212.2,"status":"paga","pixCopiaECola":null},{"id":203,"clienteId":1,"instalacao":"3013588579","referencia":"2026-08","vencimento":"2026-09-12","valor":252.06,"status":"paga","pixCopiaECola":null},{"id":204,"clienteId":1,"instalacao":"3013588579","referencia":"2026-07","vencimento":"2026-08-12","valor":242.59,"status":"paga","pixCopiaECola":null}]};
 async function buscarClientes() { return demo.clientes; }
@@ -163,7 +163,7 @@ function dialogo(titulo, texto) {
 
 // As páginas das outras HUs ainda não existem na main. Centralize os destinos
 // aqui quando forem entregues, sem modificar o template compartilhado.
-const destinos = { faturas: () => url('contas') };
+const destinos = { faturas: () => url('contas'), contrato: () => url('contratacao') };
 const nomes = { economia: 'Minha economia', contrato: 'Minha contratação', servico: 'Como a Bulbe funciona', 'duas-contas': 'Entenda suas contas', ajuda: 'Atendimento', indicacoes: 'Indique e ganhe' };
 function navegar(area) {
   if (destinos[area]) { location.href = destinos[area](); return; }

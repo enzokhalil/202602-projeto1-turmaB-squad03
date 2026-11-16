@@ -8,6 +8,11 @@ Projeto em Ciência de Dados I, Ibmec BH, 2º semestre de 2026. **Turma B, Squad
 
 Frontend acadêmico que ajuda o cliente novo a entender o serviço contratado, conferir a economia e distinguir as cobranças da Bulbe e da Cemig.
 
+## Apresentação final
+
+- **Apresentação:** https://rlrafael01.github.io/bulbe-apresentacao-squad03/#enzo/0
+- **Repositório da apresentação:** https://github.com/RLrafael01/bulbe-apresentacao-squad03
+
 ## 1. Problema
 
 O grupo escolheu investigar a falta de clareza nas primeiras cobranças. O cliente pode ter dúvidas sobre o que contratou, como a economia aparece e por que recebe uma fatura da Cemig e outra da Bulbe.
@@ -34,7 +39,7 @@ A solução organiza informações de contratação, economia, contas e atendime
 | --- | --- | --- | --- |
 | [HU01](historias/historia-integrante-1.md) | Minha economia e Entenda sua economia | Conferir valores e entender o benefício | Enzo Khalil |
 | [HU02](historias/historia-integrante-2.md) | Minhas contas, Minha fatura e Histórico de contas | Encontrar valor, vencimento e situação das contas | Rafael Lombardi |
-| [HU03](historias/historia-integrante-3.md) | Minha contratação e Meu documento | Confirmar o serviço e consultar as condições | Rhuan Matavellhe |
+| [HU03](historias/historia-integrante-3.md) | Minha contratação e Meu documento | Confirmar o serviço e consultar as condições | Rhuan Matavelli |
 | [HU04](historias/historia-integrante-4.md) | Como a Bulbe funciona | Entender o serviço e as etapas da jornada | Igor Mata Machado |
 | [HU05](historias/historia-integrante-5.md) | Entenda suas contas | Distinguir as cobranças Bulbe e Cemig | Marcio Filho |
 | [HU06](historias/historia-integrante-6.md) | Atendimento, Minha solicitação e Cancelar assinatura | Encontrar ajuda e acompanhar solicitações | Caio Campos |
@@ -102,7 +107,7 @@ Cada integrante responde por uma história e suas telas. A implementação ocorr
 | --- | --- | --- |
 | Enzo Khalil | [@enzokhalil](https://github.com/enzokhalil) | HU01, economia e template compartilhado |
 | Rafael Lombardi | [@RLrafael01](https://github.com/RLrafael01) | HU02, contas, fatura e histórico |
-| Rhuan Matavellhe | [@MdRhuan](https://github.com/MdRhuan) | HU03, contratação e documento |
+| Rhuan Matavelli | [@MdRhuan](https://github.com/MdRhuan) | HU03, contratação e documento |
 | Igor Mata Machado | [@igllmm](https://github.com/igllmm) | HU04, funcionamento do serviço e jornada |
 | Marcio Filho | [@marcio-lcf](https://github.com/marcio-lcf) | HU05, contas Bulbe e Cemig |
 | Caio Campos | [@Caiocampos21](https://github.com/Caiocampos21) | HU06, atendimento e solicitações |

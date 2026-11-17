@@ -34,7 +34,7 @@ Os perfis Rafael e André sustentam o recorte da [persona principal consolidada]
 | --- | --- | --- | --- |
 | [HU01](../../historias/historia-integrante-1.md) | Enzo Khalil | Dificuldade para conferir valores e economia | Resumo de cobranças e economia |
 | [HU02](../../historias/historia-integrante-2.md) | Rafael Lombardi | Dificuldade para encontrar contas e organizar o pagamento | Minhas contas |
-| [HU03](../../historias/historia-integrante-3.md) | Rhuan Matavellhe | Insegurança sobre o serviço contratado e o vínculo com a empresa | Minha contratação |
+| [HU03](../../historias/historia-integrante-3.md) | Rhuan Matavelli | Insegurança sobre o serviço contratado e o vínculo com a empresa | Minha contratação |
 | [HU04](../../historias/historia-integrante-4.md) | Igor Mata Machado | Dúvidas sobre o serviço e as etapas até a primeira cobrança | Explicação do serviço e da jornada |
 | [HU05](../../historias/historia-integrante-5.md) | Marcio Filho | Receio de pagar duas vezes ao receber contas Bulbe e Cemig | Entenda suas contas |
 | [HU06](../../historias/historia-integrante-6.md) | Caio Campos | Dificuldade para encontrar atendimento e acompanhar solicitações | Atendimento e acompanhamento de solicitações |
@@ -62,7 +62,7 @@ As necessidades levantadas nas personas continuam sendo hipóteses do projeto. N
 | --- | --- |
 | Implementar as telas de economia da HU01 | Enzo Khalil |
 | Implementar consulta, detalhes e histórico de contas da HU02 | Rafael Lombardi |
-| Implementar contratação e consulta de documento da HU03 | Rhuan Matavellhe |
+| Implementar contratação e consulta de documento da HU03 | Rhuan Matavelli |
 | Implementar a explicação do serviço da HU04 | Igor Mata Machado |
 | Implementar a explicação das contas Bulbe e Cemig da HU05 | Marcio Filho |
 | Implementar atendimento e acompanhamento da HU06 | Caio Campos |

@@ -30,10 +30,11 @@ Exportações completas dos quadros do novo arquivo Figma. Cada imagem preserva 
 
 ## Telas HTML
 
-- [Minha economia](../../assets/telas/hu01-minha-economia.html).
-- [Entenda sua economia](../../assets/telas/hu01-entenda-sua-economia.html).
+- [Minha economia](../../assets/telas/hu01-v2-economia.html).
+- [Conferindo economia](../../assets/telas/hu01-v2-conferencia.html).
+- [Índice da HU01 (revisão)](../../assets/telas/hu01-v2-indice.html).
 
-As páginas usam o template compartilhado e dados estáticos fictícios. O CSS específico fica em `assets/css/hu01-economia.css`.
+As páginas usam a interface própria da HU01 (`assets/js/hu01-v2.js`) e dados estáticos fictícios. O CSS específico fica em `assets/css/hu01-v2.css`.
 
 ## Navegação
 

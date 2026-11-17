@@ -10,7 +10,7 @@ São 19 imagens de telas: 17 associadas às HUs e duas de navegação geral. Tod
 | --- | --- | --- | --- |
 | HU01 | Enzo Khalil | Lucas precisa conferir os valores cobrados e entender o cálculo da economia para comparar o benefício com a contratação. | [Entender os valores e a economia](hu01-entender-valores-e-economia.md) |
 | HU02 | Rafael Lombardi | Marina precisa encontrar suas contas e consultar valor, vencimento e situação para organizar o pagamento. | [Encontrar e consultar as contas](hu02-minhas-contas.md) |
-| HU03 | Rhuan Matavellhe | Rafael quer confirmar o serviço associado a ele e esclarecer dúvidas sobre seu vínculo com a Bulbe. | [Consultar a contratação](hu03-minha-contratacao.md) |
+| HU03 | Rhuan Matavelli | Rafael quer confirmar o serviço associado a ele e esclarecer dúvidas sobre seu vínculo com a Bulbe. | [Consultar a contratação](hu03-minha-contratacao.md) |
 | HU04 | Igor Mata Machado | Camila precisa compreender como o serviço funciona, como a economia é gerada e o que muda na relação com a distribuidora. | [Entender como a Bulbe funciona](hu04-como-a-bulbe-funciona.md) |
 | HU05 | Marcio Filho | André recebe duas faturas e teme pagar duas vezes ou deixar uma cobrança em aberto. | [Entender as contas da Cemig e da Bulbe](hu05-contas-cemig-bulbe.md) |
 | HU06 | Caio Campos | Sônia precisa encontrar o canal adequado e acompanhar sua solicitação, sem perder o protocolo ou receber informações de andamento inventadas. | [Encontrar atendimento e acompanhar solicitações](hu06-atendimento-acompanhamento-solicitacao.md) |

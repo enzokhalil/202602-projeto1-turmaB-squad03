@@ -1,6 +1,6 @@
 # HU03: Consultar a contratação
 
-**Responsável:** Rhuan Matavellhe.
+**Responsável:** Rhuan Matavelli.
 
 **Persona:** [Rafael](../personas/persona-integrante-3.md).
 

@@ -4,18 +4,21 @@ Esta pasta reúne as implementações HTML entregues pelo grupo. O CSS continua 
 
 | HU | Integrante | Tela |
 | --- | --- | --- |
-| HU01 | Enzo Khalil | [Minha economia](hu01-minha-economia.html) |
-| HU01 | Enzo Khalil | [Entenda sua economia](hu01-entenda-sua-economia.html) |
+| HU01 | Enzo Khalil | [Minha economia](hu01-v2-economia.html) |
+| HU01 | Enzo Khalil | [Conferindo economia](hu01-v2-conferencia.html) |
+| HU01 | Enzo Khalil | [Índice da HU01 (revisão)](hu01-v2-indice.html) |
 | HU02 | Rafael Lombardi | [Minhas contas](hu02-contas.html) |
 | HU02 | Rafael Lombardi | [Minha fatura](hu02-fatura.html) |
 | HU02 | Rafael Lombardi | [Histórico de contas](hu02-historico.html) |
-| HU03 | Rhuan Matavellhe | [Minha contratação](hu03-contratacao.html) |
-| HU03 | Rhuan Matavellhe | [Meu documento](hu03-documento.html) |
+| HU03 | Rhuan Matavelli | [Minha contratação](hu03-v2-contrato.html) |
+| HU03 | Rhuan Matavelli | [Índice da HU03 (revisão)](hu03-v2-indice.html) |
 | HU04 | Igor Mata Machado | [Como a Bulbe funciona](hu04.html#/servico) |
 | HU05 | Marcio Filho | [Entenda suas contas](hu05-entenda-suas-contas.html) |
-| HU06 | Caio Campos | [Atendimento e telas da HU06](hu06-bulbe-mapa.html#/atendimento) |
+| HU06 | Caio Campos | [Atendimento](hu06-v2-atendimento.html) |
+| HU06 | Caio Campos | [Cancelar assinatura](hu06-v2-cancelar.html) |
+| HU06 | Caio Campos | [Índice da HU06 (revisão)](hu06-v2-indice.html) |
 
-O arquivo da HU06 contém as telas de atendimento, solicitações e cancelamento, além dos estados alternativos e do mapa de telas.
+A HU06 reúne atendimento e cancelamento. Os estados alternativos (andamento indisponível e sem pedidos) ficam acessíveis pelo índice de revisão.
 
 Abra os arquivos com o Live Server para carregar os dados JSON via `fetch`. As prévias disponíveis também permitem abertura direta. Os dados são fictícios.
 
